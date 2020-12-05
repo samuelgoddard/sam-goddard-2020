@@ -1,0 +1,137 @@
+body {
+  @apply font-sans antialiased bg-black text-white;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply
+    p-0
+    mb-6
+		leading-tight
+		font-bold;
+}
+
+h1 {
+	@apply text-xl;
+}
+
+h2 {
+	@apply text-lg;
+}
+
+.work-item {
+  @apply flex flex-wrap opacity-25;
+
+  &:hover, &:focus {
+    @apply opacity-100;
+  }
+}
+
+.header-item {
+  @apply block text-xl;
+
+  @screen lg {
+    font-size: 1.9vw;
+  }
+
+  &.is--active {
+    @apply italic relative;
+
+    &:before {
+      content: ' ';
+      width: 5px;
+      height: 5px;
+      margin-top: 10px;
+      @apply rounded-full bg-current inline-block -ml-3 absolute top-0 left-0;
+
+      @screen md {
+        @apply -ml-4;
+        width: 7px;
+        height: 7px;
+        margin-top: 1vw;
+      }
+    }
+  }
+}
+
+.footer-item {
+  @apply block text-lg;
+
+  @screen lg {
+    font-size: 1.55vw;
+  }
+}
+
+.work-item-wrapper {
+  .work-item {
+    @apply pt-5 pb-2;
+
+    @screen md {
+      padding-top: 2.3vw;
+    }
+  }
+
+  &:first-child {
+    .work-item {
+      @apply pt-0;
+    }
+  }
+}
+
+.work-item__index {
+  @apply italic w-auto mr-3 text-xl;
+  margin-top: -1.25vw;
+  
+  @screen md {
+    @apply mr-5;
+    font-size: 3vw;
+  }
+}
+
+.work-item__year {
+  @apply italic w-auto self-end text-2xl;
+
+  @screen md {
+    font-size: 4vw;
+  }
+}
+
+.work-item__title {
+  @apply block font-display uppercase leading-negative flex-1 tracking-tight text-5xl;
+
+  @screen md {
+    font-size: 10vw;
+  }
+}
+
+.about-text {
+  @apply block font-display leading-none tracking-tight;
+  font-size: 6vw;
+}
+
+/* Link */
+.link {
+  @apply text-black underline transition;
+
+  &:hover, &:focus {
+    @apply text-gray-600;
+  }
+
+  &.is--active {
+    @apply text-red-700;
+  }
+}
+
+/* Content */
+.content {
+  
+  /* Paragraph */
+  p {
+    @apply mb-6;
+  }
+
+  /* Headings following paragraphs */
+  p + h1, p + h2, p + h3, p + h4 {
+    @apply pt-6 block;
+  }
+}

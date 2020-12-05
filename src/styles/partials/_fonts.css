@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Migra';
+  src: local('Migra Extralight'), local('Migra-Extralight'),
+      url('../fonts/Migra-Extralight.woff2') format('woff2'),
+      url('../fonts/Migra-Extralight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Migra';
+  src: local('Migra Italic Extralight Italic'), local('MigraItalic-ExtralightItalic'),
+      url('../fonts/MigraItalic-ExtralightItalic.woff2') format('woff2'),
+      url('../fonts/MigraItalic-ExtralightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue World Condensed';
+  src: local('Neue World Condensed Regular'), local('NeueWorld-CondensedRegular'),
+      url('../fonts/NeueWorld-CondensedRegular.woff2') format('woff2'),
+      url('../fonts/NeueWorld-CondensedRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

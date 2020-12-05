@@ -1,0 +1,24 @@
+.container {
+  @apply px-5 py-3;
+
+  @screen md {
+    @apply px-8 py-4;
+  }
+}
+
+.container--header {
+  margin-bottom: 1vw;
+}
+
+.container--content {
+  @apply my-16;
+
+  @screen md {
+    @apply my-20;
+  }
+
+  @screen lg {
+    margin-top: 7vw;
+    margin-bottom: 5vw;
+  }
+}
