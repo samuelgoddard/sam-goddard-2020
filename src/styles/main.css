@@ -11,3 +11,28 @@
 
 /* Tailwind Utils */
 @import 'tailwindcss/utilities';
+
+html.has-scroll-smooth {
+	overflow: hidden;
+}
+
+html.has-scroll-dragging {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.has-scroll-smooth body {
+	overflow: hidden;
+}
+
+/* Specifying the scroll container manually */
+.has-scroll-smooth #___gatsby,
+.has-scroll-smooth [data-scroll-container] {
+	min-height: 100vh;
+}
+
+.texture-overlay--dark {
+	background-image: url(../images/texture-dark.png);
+}

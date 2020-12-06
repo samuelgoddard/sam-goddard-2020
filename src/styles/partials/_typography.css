@@ -19,11 +19,12 @@ h2 {
 	@apply text-lg;
 }
 
-.work-item {
-  @apply flex flex-wrap opacity-25;
+.header--mask {
+  @apply fixed top-0 left-0 right-0 mt-10 bg-gradient-to-b from-black to-transparent z-20;
+  height: 4vw;
 
-  &:hover, &:focus {
-    @apply opacity-100;
+  @screen md {
+    @apply mt-12;
   }
 }
 
@@ -62,12 +63,37 @@ h2 {
   }
 }
 
+.work-area {
+  @apply transition-all ease-in-out duration-300;
+  &:hover {
+    .work-item {
+      @apply opacity-25;
+    }
+  }
+}
+
+.work-item {
+  @apply transition-all ease-in-out duration-300 flex flex-wrap;
+
+  &:hover, &:focus {
+    @apply opacity-100 !important;
+  }
+}
+
 .work-item-wrapper {
   .work-item {
     @apply pt-5 pb-2;
 
     @screen md {
-      padding-top: 2.3vw;
+      padding-top: 3.2vw;
+    }
+
+    @screen lg {
+      padding-top: 2.9vw;
+    }
+    
+    @screen xl {
+      padding-top: 2.75vw;
     }
   }
 
@@ -105,8 +131,27 @@ h2 {
 }
 
 .about-text {
-  @apply block font-display leading-none tracking-tight;
-  font-size: 6vw;
+  @apply block font-display leading-none tracking-tight text-5xl;
+
+  @screen md {
+    font-size: 7.3vw;
+  }
+
+  @screen lg {
+    font-size: 6.9vw;
+  }
+
+  @screen xl {
+    font-size: 6.35vw;
+  }
+}
+
+.about-text--mini {
+  @apply block font-sans leading-tight text-3xl;
+
+  @screen md {
+    font-size: 3.4vw;
+  }
 }
 
 /* Link */

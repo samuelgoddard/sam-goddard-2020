@@ -1,24 +1,37 @@
 .container {
-  @apply px-5 py-3;
+  @apply px-5;
 
   @screen md {
-    @apply px-8 py-4;
+    @apply px-8;
   }
 }
 
 .container--header {
+  @apply pt-3;
   margin-bottom: 1vw;
+
+  @screen md {
+    @apply pt-4
+  }
+}
+
+.container--footer {
+  @apply pb-3;
+
+  @screen md {
+    @apply pb-4
+  }
 }
 
 .container--content {
-  @apply my-16;
+  @apply my-20;
 
   @screen md {
     @apply my-20;
   }
 
   @screen lg {
-    margin-top: 7vw;
+    margin-top: 8vw;
     margin-bottom: 5vw;
   }
 }
