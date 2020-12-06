@@ -88,7 +88,6 @@ h2 {
     
     .work-item__image {
       @apply opacity-15;
-      margin-right: 12%;
     }
   }
 }
@@ -150,7 +149,7 @@ h2 {
 .work-item__image {
   @apply w-2/3 absolute top-0 right-0 opacity-0 transition-all ease-in-out duration-500;
   margin-top: -4%;
-  margin-right: 10%;
+  margin-right: 5%;
 
   @screen md {
     @apply w-5/12;

@@ -33,6 +33,6 @@ html.has-scroll-dragging {
 	min-height: 100vh;
 }
 
-/* .texture-overlay--dark {
+.texture-overlay {
 	background-image: url(../images/texture-dark.png);
-} */
+}

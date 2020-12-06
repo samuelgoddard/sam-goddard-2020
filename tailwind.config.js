@@ -24,6 +24,7 @@ module.exports = {
       opacity: {
         '0': '0',
         '15': '.15',
+        '20': '.20',
       },
       lineHeight: {
         'negative': '0.85',
