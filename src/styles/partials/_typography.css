@@ -148,7 +148,7 @@ h2 {
 
 .work-item__image {
   @apply w-2/3 absolute top-0 right-0 opacity-0 transition-all ease-in-out duration-500;
-  margin-top: -4%;
+  margin-top: -5%;
   margin-right: 5%;
 
   @screen md {
