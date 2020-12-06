@@ -9,21 +9,23 @@ import "../styles/main.css"
 
 const Layout = ({ children, location }) => {
   return (
-    <>
+    <div className={ location.pathname === '/about' ? "bg-white text-black transition-colors ease-in-out duration-700 delay-75 min-h-screen" : "bg-black text-white transition-color ease-in-out duration-700 delay-75 min-h-screen"}>
       <div className="w-full h-screen absolute top-0 left-0 right-0 bottom-0 texture-overlay z-0"></div>
       <Header />
-      <div className="header--mask"></div>
+      { !location.pathname === '/about' && (
+        <div className="header--mask"></div>
+      )}
 
-      <div id="scroll-container" className="content-inner" data-scroll-container>
+      <div id="scroll-container" data-scroll-container>
         <AnimatePresence exitBeforeEnter>
           {children}
         </AnimatePresence>
       </div>
 
-      { location.pathname === '/about' && (
+      {/* { location.pathname === '/about' && (
         <Footer />
-      )}
-    </>
+      )} */}
+    </div>
   )
 }
 

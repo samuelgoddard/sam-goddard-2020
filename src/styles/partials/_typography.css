@@ -1,5 +1,9 @@
 body {
-  @apply font-sans antialiased bg-black text-white;
+  @apply font-sans antialiased;
+}
+
+p {
+  @apply text-3xl mb-5;
 }
 
 /* Headings */
@@ -110,6 +114,7 @@ h2 {
   
   @screen md {
     @apply mr-5;
+    /* font-size: 50px; */
     font-size: 3vw;
   }
 }
@@ -118,14 +123,17 @@ h2 {
   @apply italic w-auto self-end text-2xl;
 
   @screen md {
+    /* font-size: 50px; */
     font-size: 4vw;
   }
 }
 
 .work-item__title {
-  @apply block font-display uppercase leading-negative flex-1 tracking-tight text-5xl;
+  @apply block uppercase font-display leading-negative flex-1 text-5xl;
 
   @screen md {
+    /* font-size: 120px; */
+    line-height: 9vw;
     font-size: 10vw;
   }
 }
@@ -180,3 +188,7 @@ h2 {
     @apply pt-6 block;
   }
 }
+
+::selection { 
+  @apply bg-white text-black bg-opacity-100;
+ }

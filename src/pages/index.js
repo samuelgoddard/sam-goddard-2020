@@ -2,7 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import { graphql } from "gatsby"
-import Scroll from "../components/locomotiveScroll"
+import { SmoothScrollProvider } from "../components/locomotiveScroll"
 import { fade } from "../helpers/transitionHelper"
 
 const IndexPage = ({ data: { work }, location}) => {
@@ -10,29 +10,34 @@ const IndexPage = ({ data: { work }, location}) => {
     <>
       <SEO title="Home" />
       
-      <Scroll callback={location} />
+      <SmoothScrollProvider options={{ smooth: true }}>
 
-      <motion.section
-        initial="initial"
-        animate="enter"
-        exit="exit"
-        className="container container--content"
-      >
-        <ul className="work-area">
-          {work.edges.map(({ node }, i) => {
-            let length = work.edges.length
-            return (
-              <motion.li variants={fade} key={i} className={i + 1 === length ? `work-item-wrapper` : `work-item-wrapper border-opacity-25 border-b border-white`}>
-                <a className="work-item" href={ node.url } target="_blank" rel="noopener noreferrer">
-                  <span className="work-item__index">(0{ i + 1 })</span>
-                  <span className="work-item__title">{ node.title }</span>
-                  <span className="work-item__year">{ node.year }</span>
-                </a>
-              </motion.li>
-            )
-          })}
-        </ul>
-      </motion.section>
+        <motion.section
+          data-scroll-section
+          initial="initial"
+          animate="enter"
+          exit="exit"
+        >
+          <motion.div variants={fade}>
+            <div className="container container--content">
+              <ul className="work-area">
+                {work.edges.map(({ node }, i) => {
+                  let length = work.edges.length
+                  return (
+                    <li key={i} className={i + 1 === length ? `work-item-wrapper block` : `work-item-wrapper block border-opacity-25 border-b border-white`}>
+                      <a className="work-item" href={ node.url } target="_blank" rel="noopener noreferrer">
+                        <span className="work-item__index">({ i < 9 ? '0' : ''}{ i + 1 })</span>
+                        <span className="work-item__title">{ node.title }</span>
+                        <span className="work-item__year">{ node.year }</span>
+                      </a>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          </motion.div>
+        </motion.section>
+      </SmoothScrollProvider>
     </>
   )
 }

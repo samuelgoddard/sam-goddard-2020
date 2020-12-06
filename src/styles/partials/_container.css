@@ -24,14 +24,14 @@
 }
 
 .container--content {
-  @apply my-20;
+  @apply py-20;
 
   @screen md {
-    @apply my-20;
+    @apply py-20;
   }
 
   @screen lg {
-    margin-top: 8vw;
-    margin-bottom: 5vw;
+    padding-top: 8vw;
+    padding-bottom: 5vw;
   }
 }
