@@ -137,7 +137,7 @@ h2 {
 }
 
 .work-item__title {
-  @apply block uppercase font-display leading-negative tracking-tight flex-1 text-5xl;
+  @apply block uppercase font-display leading-negative tracking-tight flex-1 text-5xl pr-6;
 
   @screen md {
     /* font-size: 120px; */
