@@ -35,3 +35,15 @@
     padding-bottom: 5vw;
   }
 }
+
+.container--content-about {
+  @apply pt-20 min-h-screen;
+
+  @screen md {
+    @apply pt-20;
+  }
+
+  @screen lg {
+    padding-top: 8vw;
+  }
+}

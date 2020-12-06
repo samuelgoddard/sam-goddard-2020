@@ -21,6 +21,10 @@ module.exports = {
           'Helvetica', 'Arial', 'sans-serif'
         ],
       },
+      opacity: {
+        '0': '0',
+        '15': '.15',
+      },
       lineHeight: {
         'negative': '0.85',
       },
@@ -28,5 +32,8 @@ module.exports = {
   },
   corePlugins: {
     container: false
+  },
+  variants: {
+    opacity: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus']
   }
 }
