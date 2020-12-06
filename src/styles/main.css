@@ -12,6 +12,34 @@
 /* Tailwind Utils */
 @import 'tailwindcss/utilities';
 
+body {
+	margin: 0;
+	padding: 0;
+	
+	@screen lg {
+		overflow: hidden; /* Hide scrollbars */
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.fixed-when-scroll {
+	transition: all ease 350ms;
+	@apply fixed !important;
+
+	transform: translateY(-3.65rem) !important;
+
+	@screen md {
+		@apply hidden;
+	}
+}
+
+[data-direction="up"] .fixed-when-scroll {
+	transform: translateY(0px) !important;
+}
+
 html.has-scroll-smooth {
 	overflow: hidden;
 }
@@ -35,4 +63,68 @@ html.has-scroll-dragging {
 
 .texture-overlay {
 	background-image: url(../images/texture-dark.png);
+}
+
+.ticker-wrapper {
+    @apply overflow-hidden w-64;
+}
+
+.Marquee { 
+    white-space: nowrap;
+    overflow-x: hidden;
+    display: block;
+    position: relative;    
+
+    /* &:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        transition-delay: 50ms;
+        transition-property: box-shadow;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    } */
+}
+
+.ticker-wrapper--dark {
+    .Marquee {
+        &:before {
+            box-shadow: inset 0 0 20px 10px theme("colors.black"); 
+        }
+    }
+}
+
+.ticker-wrapper--light {
+    .Marquee {
+        &:before {
+            box-shadow: inset 0 0 20px 10px theme("colors.white") ;
+        }
+    }
+}
+
+.MarqueeContent {
+    display: inline-block;
+}
+
+.header-mask {
+    height: 50px;
+    @apply fixed top-0 left-0 right-0 w-full z-10 bg-black;
+
+    @screen md {
+        height: 53px;
+    }
+
+    @screen lg {
+        height: 4.9vw;
+    }
+
+    @screen xl {
+        height: 4.6vw;
+    }
 }
