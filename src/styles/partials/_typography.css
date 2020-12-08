@@ -43,17 +43,17 @@ h2 {
     @apply italic relative;
 
     &:before {
-      content: ' ';
-      width: 5px;
-      height: 5px;
-      margin-top: 10px;
-      @apply rounded-full bg-current inline-block -ml-3 absolute top-0 left-0;
+      content: '∗';
+      /* width: 5px;
+      height: 5px; */
+      margin-top: 3px;
+      @apply rounded-full inline-block -ml-3 absolute top-0 left-0 font-display not-italic leading-none;
 
       @screen md {
         @apply -ml-4;
-        width: 7px;
-        height: 7px;
-        margin-top: 1vw;
+        /* width: 7px;
+        height: 7px; */
+        margin-top: 0.35vw;
       }
     }
   }

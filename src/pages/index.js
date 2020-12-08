@@ -12,7 +12,12 @@ const IndexPage = ({ data: { work }, location}) => {
       <SEO title="Home" />
     
       
-      <SmoothScrollProvider options={{ smooth: true }}>
+      <SmoothScrollProvider
+        options={{
+          smooth: true,
+          lerp: 0.10
+        }}
+      >
         <motion.section
           data-scroll-section
           initial="initial"
@@ -23,82 +28,6 @@ const IndexPage = ({ data: { work }, location}) => {
             {/* <div className="header-mask" data-scroll-sticky data-scroll data-scroll-target="#___gatsby"></div> */}
             <div className="container container--content">
               <ul className="work-area" id="work-area">
-                {work.edges.map(({ node }, i) => {
-                  let length = work.edges.length
-                  return (
-                    <li key={i} className={`work-item-wrapper block border-opacity-25 border-b border-white`}>
-                      <a className="work-item relative group" href={ node.url } target="_blank" rel="noopener noreferrer">
-                        <span className="work-item__index">({ i < 9 ? '0' : ''}{ i + 1 })</span>
-                        <span className="work-item__title">{ node.title }</span>
-                        <span className="work-item__year">{ node.year }</span>
-                        { node.image ? (
-                        <div className="work-item__image">
-                            <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
-                          </div>
-                        ) : (<></>)}
-                      </a>
-                    </li>
-                  )
-                })}
-              </ul>
-              <ul className="work-area mt-10" id="work-area">
-                {work.edges.map(({ node }, i) => {
-                  let length = work.edges.length
-                  return (
-                    <li key={i} className={`work-item-wrapper block border-opacity-25 border-b border-white`}>
-                      <a className="work-item relative group" href={ node.url } target="_blank" rel="noopener noreferrer">
-                        <span className="work-item__index">({ i < 9 ? '0' : ''}{ i + 1 })</span>
-                        <span className="work-item__title">{ node.title }</span>
-                        <span className="work-item__year">{ node.year }</span>
-                        { node.image ? (
-                        <div className="work-item__image">
-                            <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
-                          </div>
-                        ) : (<></>)}
-                      </a>
-                    </li>
-                  )
-                })}
-              </ul>
-              <ul className="work-area mt-10" id="work-area">
-                {work.edges.map(({ node }, i) => {
-                  let length = work.edges.length
-                  return (
-                    <li key={i} className={`work-item-wrapper block border-opacity-25 border-b border-white`}>
-                      <a className="work-item relative group" href={ node.url } target="_blank" rel="noopener noreferrer">
-                        <span className="work-item__index">({ i < 9 ? '0' : ''}{ i + 1 })</span>
-                        <span className="work-item__title">{ node.title }</span>
-                        <span className="work-item__year">{ node.year }</span>
-                        { node.image ? (
-                        <div className="work-item__image">
-                            <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
-                          </div>
-                        ) : (<></>)}
-                      </a>
-                    </li>
-                  )
-                })}
-              </ul>
-              <ul className="work-area mt-10" id="work-area">
-                {work.edges.map(({ node }, i) => {
-                  let length = work.edges.length
-                  return (
-                    <li key={i} className={`work-item-wrapper block border-opacity-25 border-b border-white`}>
-                      <a className="work-item relative group" href={ node.url } target="_blank" rel="noopener noreferrer">
-                        <span className="work-item__index">({ i < 9 ? '0' : ''}{ i + 1 })</span>
-                        <span className="work-item__title">{ node.title }</span>
-                        <span className="work-item__year">{ node.year }</span>
-                        { node.image ? (
-                        <div className="work-item__image">
-                            <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
-                          </div>
-                        ) : (<></>)}
-                      </a>
-                    </li>
-                  )
-                })}
-              </ul>
-              <ul className="work-area mt-10" id="work-area">
                 {work.edges.map(({ node }, i) => {
                   let length = work.edges.length
                   return (
