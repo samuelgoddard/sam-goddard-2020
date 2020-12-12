@@ -78,7 +78,7 @@ h2 {
 
 .work-item {
   transition: opacity .5s ease-in-out;
-  
+
   &:hover, &:focus {
     @apply opacity-100 !important;
 
@@ -247,4 +247,23 @@ h2 {
 button {
   border: none !important;
   outline:none !important;
+}
+
+.fake-strike {
+  @apply relative;
+  &:after {
+    content: " ";
+    /* transition: width 0.5s ease-in-out; */
+    @apply absolute  bg-current;
+    top: 49%;
+    left: 0;
+    width: 0px;
+    height: 1px;
+  }
+
+  &:hover, &:focus {
+    &:after {
+      @apply w-full;
+    }
+  }
 }

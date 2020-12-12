@@ -7,7 +7,7 @@ const Header = ({ theme }) => {
   return (
     <header className={ `container container--header fixed top-0 left-0 right-0 w-full z-40 transition-colors ease-in-out duration-500 delay-75 ` + theme }>
       <div className="flex flex-wrap items-center border-b border-current border-opacity-75 pb-2">
-        <Link className="header-item hover:line-through focus:line-through" to="/"><span className="hidden md:block">Sam Goddard</span><span className="block md:hidden">SG</span></Link>
+        <Link className="header-item fake-strike" to="/"><span className="hidden md:block">Sam Goddard</span><span className="block md:hidden">SG</span></Link>
         <span className="header-item ml-1 md:ml-8">’89 —</span>
 
         <span className="header-item ml-auto hidden lg:block ">
@@ -36,12 +36,12 @@ const Header = ({ theme }) => {
         <div className="ml-auto flex flex-wrap">
           <nav>
             <ul className="flex flex-wrap">
-              <li><Link activeClassName="is--active" className="header-item hover:line-through focus:line-through  ml-6 md:ml-8 xl:ml-12" to="/">Works</Link></li>
-              <li><Link activeClassName="is--active" className="header-item hover:line-through focus:line-through  ml-6 md:ml-8 xl:ml-12" to="/about">About</Link></li>
+              <li><Link activeClassName="is--active" className="header-item fake-strike ml-6 md:ml-8 xl:ml-12" to="/">Works</Link></li>
+              <li><Link activeClassName="is--active" className="header-item fake-strike ml-6 md:ml-8 xl:ml-12" to="/about">About</Link></li>
             </ul>
           </nav>
 
-          <AnchorLink to="/#collaborate" stripHash className="header-item hover:line-through focus:line-through ml-5 md:ml-24"><span className="hidden md:inline">Let's </span>Collab<span className="hidden sm:inline">orate</span></AnchorLink>
+          <AnchorLink to="/#collaborate" stripHash className="header-item fake-strike ml-5 md:ml-24"><span className="hidden md:inline">Let's </span>Collab<span className="hidden sm:inline">orate</span></AnchorLink>
         </div>
       </div>
     </header>
