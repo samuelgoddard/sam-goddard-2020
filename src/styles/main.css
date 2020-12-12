@@ -12,16 +12,21 @@
 /* Tailwind Utils */
 @import 'tailwindcss/utilities';
 
-body {
+/* body {
 	margin: 0;
 	padding: 0;
 	
 	@screen lg {
-		overflow: hidden; /* Hide scrollbars */
+		overflow: hidden; 
 	}
+} */
+
+body {
+	margin: 0;
+    padding: 0;
 }
 
-html {
+/* html {
 	scroll-behavior: smooth;
 }
 
@@ -55,11 +60,10 @@ html.has-scroll-dragging {
 	overflow: hidden;
 }
 
-/* Specifying the scroll container manually */
 .has-scroll-smooth #___gatsby,
 .has-scroll-smooth [data-scroll-container] {
 	min-height: 100vh;
-}
+} */
 
 .texture-overlay {
 	background-image: url(../images/texture-dark.png);

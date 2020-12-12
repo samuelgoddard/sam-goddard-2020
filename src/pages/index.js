@@ -14,7 +14,7 @@ const IndexPage = ({ data: { work }, location}) => {
     
       <SmoothScrollProvider
         options={{
-          smooth: true,
+          smooth: false,
           lerp: 0.10
         }}
       >
