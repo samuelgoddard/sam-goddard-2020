@@ -67,7 +67,8 @@ export const query = graphql`
           year
           image {
             fluid(
-              imgixParams: {w: "1600", h: "1200", fit: "crop", sat: -100 }) {
+              maxWidth: 1600,
+              imgixParams: {w: "1600", h: "1200", fit: "crop" }) {
               ...GatsbyDatoCmsFluid
             }
             alt
