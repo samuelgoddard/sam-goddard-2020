@@ -2,7 +2,7 @@ import React from "react"
 
 const Footer = ({ backToTopButton, borderColor }) => (
   <footer className="container--footer w-full bg-trasparent">
-    <div className={`border-t border-${ borderColor } border-opacity-75 pt-3 md:pt-4`}>
+    <div className={`border-t ${ borderColor } border-opacity-75 pt-3 md:pt-4`}>
       <nav>
         <ul className="flex flex-wrap items-center">
           <li><a href="https://twitter.com/samuelgoddard?lang=en" className="footer-item hover:line-through focus:line-through mr-6 md:mr-8 xl:mr-10">Twitter</a></li>

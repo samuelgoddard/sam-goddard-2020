@@ -35,7 +35,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
             </div>
 
             <div className="mt-auto self-end w-full">
-              <Footer borderColor="black" />
+              <Footer borderColor="border-black" />
             </div>
           </div>
         </motion.div>

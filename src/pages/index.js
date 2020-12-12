@@ -96,7 +96,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
               </div>
               
               <div className="mt-auto self-end w-full container">
-                <Footer borderColor="white" backToTopButton />
+                <Footer borderColor="border-white" backToTopButton />
               </div>
             </div> 
           </div>
