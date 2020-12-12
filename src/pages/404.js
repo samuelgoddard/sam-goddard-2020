@@ -16,7 +16,7 @@ const NotFoundPage = ({ location }) => (
       data-scroll-section
       animate="enter"
       exit="exit"
-      className="text-black"
+      className="text-white"
     >
       <div>
         <div className="container container--content-about flex flex-wrap" id="pinned-pane">
