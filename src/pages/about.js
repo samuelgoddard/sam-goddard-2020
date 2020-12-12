@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from 'framer-motion'
 import { graphql } from "gatsby"
-import { fade, revealInOut } from "../helpers/transitionHelper"
+import { fadeSlow, fade, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 
 const AboutPage = ({ data: { datoCmsAbout }, location}) => {
@@ -23,7 +23,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
         exit="exit"
         className="text-black"
       >
-        <motion.div variants={fade}>
+        <div>
           <div className="container container--content-about flex flex-wrap" id="pinned-pane">
 
             <div className="relative">
@@ -51,21 +51,35 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                   </span>
                 </span>
 
-                <span className="block md:hidden">
+                <motion.span variants={fade} className="block md:hidden">
                   I’m a web developer from Nottingham with 10+ years of experience in methodical html, css &amp; javascript. I’m really interested in scaleable front-end development, craft cms &amp; vuejs.
-                </span>
+                </motion.span>
               </motion.div>
 
-              <div className="w-2/3 md:w-5/12 xl:w-4/12 fixed z-0 bottom-0 right-0 mr-5 md:mr-8 mb-5 md:mb-8 opacity-15">
-                <Img fluid={ datoCmsAbout.image.fluid } className="w-full mb-0 pb-0" />
-              </div>
+              <motion.div
+                variants={{
+                  enter: { transition: { delayChildren: 0.3 }}
+                }}
+              >
+                <motion.div variants={fadeSlow}>
+                  <div className="w-2/3 md:w-5/12 xl:w-4/12 fixed z-0 bottom-0 right-0 mr-5 md:mr-8 mb-5 md:mb-8 opacity-15">
+                    <Img fluid={ datoCmsAbout.image.fluid } className="w-full mb-0 pb-0" />
+                  </div>
+                </motion.div>
+              </motion.div>
             </div>
-
-            <div className="mt-auto self-end w-full">
-              <Footer borderColor="border-black" />
-            </div>
+            <motion.div
+              variants={{
+                enter: { transition: { delayChildren: 0.45 }}
+              }}
+              className="mt-auto self-end w-full"
+            >
+              <motion.div variants={fadeSlow} className="">
+                <Footer borderColor="border-black" />
+              </motion.div>
+            </motion.div>
           </div>
-        </motion.div>
+        </div>
       </motion.section>
     </>
   )
