@@ -11,14 +11,14 @@ initial: { opacity: 0 },
 }
 
 export const revealInOut = {
-	initial: { y: "100%" },
+	initial: { y: "130%" },
 	enter: { 
     y: "0%",
-    transition: { duration: 1, ease: [0.76, 0, 0.24, 1] }
+    transition: { duration: 0.85, ease: [0.76, 0, 0.24, 1] }
   },
   exit: { 
-    y: "100%",
-    transition: { duration: 1, ease: [0.76, 0, 0.24, 1] }
+    opacity: 0,
+    transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] }
   }
 }
 

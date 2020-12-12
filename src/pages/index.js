@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from "framer-motion"
 import { graphql } from "gatsby"
-import { fade } from "../helpers/transitionHelper"
+import { fade, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 
 const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
@@ -22,50 +22,63 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
         animate="enter"
         exit="exit"
         className="text-white"
+      
       >
         <motion.div variants={fade}>
-          {/* <div className="header-mask" data-scroll-sticky data-scroll data-scroll-target="#___gatsby"></div> */}
-          <div className="container container--content">
-            <ul className="work-area" id="work-area">
-              {work.edges.map(({ node }, i) => {
-                return (
-                  <li key={i} className={`work-item-wrapper block border-opacity-25 border-b border-white`}>
-                    { node.inProgress ? (
-                      <span className="work-item block relative group cursor-not-allowed">
-                        <span className="work-item__inner">
-                          <span className="work-item__index">(<span>{ i < 9 ? '0' : ''}{ i + 1 }</span>)</span>
-                          <span className="work-item__title">{ node.title }</span>
-                          <span className="work-item__year">
-                            <span>Soon</span>
-                          </span>
-                          { node.image ? (
-                          <div className="work-item__image">
-                              <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
-                            </div>
-                          ) : (<></>)}
-                        </span>
+          <motion.div variants={{
+            enter: { transition: { staggerChildren: 0.02 }}
+          }}>
+            {/* <div className="header-mask" data-scroll-sticky data-scroll data-scroll-target="#___gatsby"></div> */}
+            <div className="container container--content">
+              <ul className="work-area" id="work-area">
+                {work.edges.map(({ node }, i) => {
+                  return (
+                    <li key={i} className={`work-item-wrapper block border-opacity-25 border-b border-white`}>
+                      { node.inProgress ? (
+                        <span className="work-item block relative group cursor-not-allowed" href={ node.url } target="_blank" rel="noopener noreferrer">
+                        <div className="overflow-hidden">
+                          <div className="work-item__inner">
+                            <motion.div variants={revealInOut} className="flex flex-wrap w-full">
+                              <span className="work-item__index self-start">({ i < 9 ? '0' : ''}{ i + 1 })</span>
+                              <span className="work-item__title">{ node.title }</span>
+                              <span className="work-item__year">
+                                <span>Soon</span>
+                              </span>
+                            </motion.div>
+                          </div>
+                        </div>
+                        { node.image ? (
+                        <div className="work-item__image">
+                            <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
+                          </div>
+                        ) : (<></>)}
                       </span>
-                    ) : (
-                      <a className="work-item block relative group" href={ node.url } target="_blank" rel="noopener noreferrer">
-                        <span className="work-item__inner">
-                          <span className="work-item__index">(<span>{ i < 9 ? '0' : ''}{ i + 1 }</span>)</span>
-                          <span className="work-item__title">{ node.title }</span>
-                          <span className="work-item__year">
-                            <span>{ node.year }</span>
-                          </span>
+                      ) : (
+                        <a className="work-item block relative group" href={ node.url } target="_blank" rel="noopener noreferrer">
+                          <div className="overflow-hidden">
+                            <div className="work-item__inner">
+                              <motion.div variants={revealInOut} className="flex flex-wrap w-full">
+                                <span className="work-item__index self-start">({ i < 9 ? '0' : ''}{ i + 1 })</span>
+                                <span className="work-item__title">{ node.title }</span>
+                                <span className="work-item__year">
+                                  <span>{ node.year }</span>
+                                </span>
+                              </motion.div>
+                            </div>
+                          </div>
                           { node.image ? (
                           <div className="work-item__image">
                               <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
                             </div>
                           ) : (<></>)}
-                        </span>
-                      </a>
-                    )}
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
+                        </a>
+                      )}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          </motion.div>
           
           <div className="flex flex-wrap items-center" id="collaborate">
             <div className="flex flex-wrap items-start">

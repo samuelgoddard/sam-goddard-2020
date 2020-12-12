@@ -93,11 +93,11 @@ h2 {
 }
 
 .work-item__inner {
-  @apply transition-all ease-in-out duration-300 flex flex-wrap;
+  @apply transition-all ease-in-out duration-300;
 }
 
 .work-item-wrapper {
-  .work-item {
+  .work-item__inner {
     @apply pt-5 pb-2;
 
     @screen md {
@@ -110,14 +110,14 @@ h2 {
     
     @screen xl {
       padding-top: 2.75vw;
+      /* padding-top: 1.25vw; */
+      /* padding-bottom: 0.5vw; */
     }
   }
+}
 
-  &:first-child {
-    .work-item {
-      @apply pt-0;
-    }
-  }
+.work-area {
+  margin-top: -2.75vw;
 }
 
 .work-item__index {
@@ -129,8 +129,8 @@ h2 {
     @apply mr-5 block;
     /* font-size: 50px; */
     font-size: 3vw;
-
     min-width: 4vw;
+    /* margin-top: -3vw; */
   }
 }
 
@@ -151,7 +151,7 @@ h2 {
 
   @screen md {
     /* font-size: 120px; */
-    line-height: 9vw;
+    /* line-height: 5vw; */
     font-size: 10vw;
   }
 }
@@ -261,7 +261,7 @@ button {
     height: 1px;
   }
 
-  &:hover, &:focus {
+  &:hover {
     &:after {
       @apply w-full;
     }
