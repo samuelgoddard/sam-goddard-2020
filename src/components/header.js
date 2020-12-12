@@ -7,7 +7,7 @@ const Header = ({ theme }) => {
     <header className={ `container container--header fixed top-0 left-0 right-0 w-full z-40 transition-colors ease-in-out duration-500 delay-75 ` + theme }>
       <div className="flex flex-wrap items-center border-b border-current border-opacity-75 pb-2">
         <Link className="header-item hover:line-through focus:line-through" to="/"><span className="hidden md:block">Sam Goddard</span><span className="block md:hidden">SG</span></Link>
-        <span className="header-item ml-3 md:ml-8 ">’89 —</span>
+        <span className="header-item ml-1 md:ml-8">’89 —</span>
 
         <span className="header-item ml-auto hidden lg:block ">
           <div className={ theme === 'text-black' ? `ticker-wrapper ticker-wrapper--light` : `ticker-wrapper ticker-wrapper--dark` }>
@@ -40,7 +40,7 @@ const Header = ({ theme }) => {
             </ul>
           </nav>
 
-          <a href="mailto:hello@samgoddard.co.uk" className="header-item hover:line-through focus:line-through ml-5 md:ml-24"><span className="hidden md:inline">Let's </span>Collaborate</a>
+          <a href="mailto:hello@samgoddard.co.uk" className="header-item hover:line-through focus:line-through ml-5 md:ml-24"><span className="hidden md:inline">Let's </span>Collab<span className="hidden sm:inline-block">orate</span></a>
         </div>
       </div>
     </header>

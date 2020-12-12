@@ -6,6 +6,7 @@ import { graphql } from "gatsby"
 import { SmoothScrollProvider } from "../components/locomotiveScroll"
 import { fade } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
+import Div100vh from 'react-div-100vh'
 
 const AboutPage = ({ data: { datoCmsAbout }, location}) => {
   return (
@@ -21,7 +22,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
           exit="exit"
         >
           <motion.div variants={fade}>
-            <div className="container container--content-about flex flex-wrap" id="pinned-pane">
+            <Div100vh className="container container--content-about flex flex-wrap" id="pinned-pane">
               <div className="relative">
                 <div className="content w-10/12 about-text relative z-10" dangerouslySetInnerHTML={{ __html: `&nbsp;&nbsp;&nbsp;&nbsp;` + datoCmsAbout.heading }}>
                 </div>
@@ -34,7 +35,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
               <div className="mt-auto self-end w-full">
                 <Footer borderColor="black" />
               </div>
-            </div>
+            </Div100vh>
           </motion.div>
         </motion.section>
       </SmoothScrollProvider>

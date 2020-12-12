@@ -166,7 +166,7 @@ h2 {
 
 .about-text {
   @apply block font-display leading-none tracking-tight;
-  font-size: 2.65rem;
+  font-size: 2.85rem;
 
   @screen md {
     font-size: 6.85vw;
@@ -183,7 +183,7 @@ h2 {
 
 .collab-text {
   @apply block font-display leading-none tracking-tight;
-  font-size: 2rem;
+  font-size: 2.7rem;
 
   @screen md {
     font-size: 4.1vw;

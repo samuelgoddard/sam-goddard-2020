@@ -37,7 +37,7 @@
 }
 
 .container--content-about {
-  @apply pt-20 min-h-screen;
+  @apply pt-20;
 
   @screen md {
     @apply pt-20;
