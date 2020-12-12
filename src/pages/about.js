@@ -5,16 +5,8 @@ import { motion } from 'framer-motion'
 import { graphql } from "gatsby"
 import { fade, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
-import "splitting/dist/splitting.css";
-import "splitting/dist/splitting-cells.css";
-import Splitting from "splitting";
 
 const AboutPage = ({ data: { datoCmsAbout }, location}) => {
-  useEffect(() => {
-    Splitting({ by: 'lines' }).forEach(s => { 
-      Splitting({ target: s.words, by: 'chars', force: true }) 
-    });
-  }, [])
   return (
     <>
       <SEO
@@ -41,7 +33,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                   enter: { transition: { staggerChildren: 0.03 }}
                 }}
               >
-                <span className="block">
+                <span className="hidden md:block">
                   <span className="block overflow-hidden">
                     <motion.span variants={revealInOut} className="block w-full">I’m a web developer from Nottingham</motion.span>
                   </span>
@@ -57,6 +49,10 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                   <span className="block overflow-hidden">
                     <motion.span variants={revealInOut} className="block w-full">development, craft cms &amp; vuejs.</motion.span>
                   </span>
+                </span>
+
+                <span className="block md:hidden">
+                  I’m a web developer from Nottingham with 10+ years of experience in methodical html, css &amp; javascript. I’m really interested in scaleable front-end development, craft cms &amp; vuejs.
                 </span>
               </motion.div>
 
