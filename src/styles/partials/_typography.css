@@ -77,12 +77,11 @@ h2 {
 }
 
 .work-item {
-  @apply transition-all ease-in-out duration-300 flex flex-wrap;
 
   &:hover, &:focus {
     @apply opacity-100 !important;
 
-    .work-item__index {
+    .work-item__inner {
       @apply pl-5;
     }
     
@@ -90,6 +89,10 @@ h2 {
       @apply opacity-15;
     }
   }
+}
+
+.work-item__inner {
+  @apply transition-all ease-in-out duration-300 flex flex-wrap;
 }
 
 .work-item-wrapper {
@@ -117,13 +120,16 @@ h2 {
 }
 
 .work-item__index {
-  @apply italic w-auto mr-2 text-lg pl-0 transition-all ease-in-out duration-500;
+  @apply italic w-auto mr-2 text-lg pl-0 transition-all ease-in-out duration-500 block text-center;
   margin-top: -1.25vw;
+  min-width: 20px;
   
   @screen md {
-    @apply mr-5;
+    @apply mr-5 block;
     /* font-size: 50px; */
     font-size: 3vw;
+
+    min-width: 4vw;
   }
 }
 

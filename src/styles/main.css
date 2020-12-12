@@ -12,19 +12,24 @@
 /* Tailwind Utils */
 @import 'tailwindcss/utilities';
 
-/* body {
-	margin: 0;
-	padding: 0;
-	
-	@screen lg {
-		overflow: hidden; 
-	}
-} */
-
 body {
 	margin: 0;
-    padding: 0;
+	padding: 0;
+	@apply bg-black;
 }
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent; 
+}
+/* ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+} */
+
 
 /* html {
 	scroll-behavior: smooth;
