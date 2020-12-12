@@ -43,17 +43,17 @@ h2 {
     @apply italic relative;
 
     &:before {
-      content: '∗';
-      /* width: 5px;
-      height: 5px; */
-      margin-top: 3px;
-      @apply rounded-full inline-block -ml-3 absolute top-0 left-0 font-display not-italic leading-none;
+      content: ' ';
+      width: 5px;
+      height: 5px;
+      margin-top: 10px;
+      @apply rounded-full inline-block -ml-3 absolute top-0 left-0 font-display not-italic leading-none bg-current;
 
       @screen md {
         @apply -ml-4;
-        /* width: 7px;
-        height: 7px; */
-        margin-top: 0.35vw;
+        width: 8px;
+        height: 8px;
+        margin-top: 1vw;
       }
     }
   }
@@ -117,7 +117,7 @@ h2 {
 }
 
 .work-item__index {
-  @apply italic w-auto mr-3 text-xl pl-0 transition-all ease-in-out duration-500;
+  @apply italic w-auto mr-2 text-lg pl-0 transition-all ease-in-out duration-500;
   margin-top: -1.25vw;
   
   @screen md {
@@ -129,7 +129,7 @@ h2 {
 
 
 .work-item__year {
-  @apply italic w-auto self-end text-2xl;
+  @apply italic w-auto self-end text-xl;
 
   @screen md {
     /* font-size: 50px; */
@@ -138,7 +138,9 @@ h2 {
 }
 
 .work-item__title {
-  @apply block uppercase font-display leading-negative tracking-tight flex-1 text-5xl pr-6;
+  @apply block uppercase font-display leading-negative tracking-tight flex-1 pr-4;
+
+  font-size: 2.65rem;
 
   @screen md {
     /* font-size: 120px; */
@@ -163,7 +165,8 @@ h2 {
 
 
 .about-text {
-  @apply block font-display leading-none tracking-tight text-5xl;
+  @apply block font-display leading-none tracking-tight;
+  font-size: 2.65rem;
 
   @screen md {
     font-size: 6.85vw;
@@ -179,7 +182,8 @@ h2 {
 }
 
 .collab-text {
-  @apply block font-display leading-none tracking-tight text-3xl;
+  @apply block font-display leading-none tracking-tight;
+  font-size: 2rem;
 
   @screen md {
     font-size: 4.1vw;
