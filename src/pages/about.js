@@ -1,12 +1,20 @@
-import React from "react"
+import React, { useEffect } from "react"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from 'framer-motion'
 import { graphql } from "gatsby"
-import { fade } from "../helpers/transitionHelper"
+import { fade, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
+import "splitting/dist/splitting.css";
+import "splitting/dist/splitting-cells.css";
+import Splitting from "splitting";
 
 const AboutPage = ({ data: { datoCmsAbout }, location}) => {
+  useEffect(() => {
+    Splitting({ by: 'lines' }).forEach(s => { 
+      Splitting({ target: s.words, by: 'chars', force: true }) 
+    });
+  }, [])
   return (
     <>
       <SEO
@@ -25,9 +33,32 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
       >
         <motion.div variants={fade}>
           <div className="container container--content-about flex flex-wrap" id="pinned-pane">
+
             <div className="relative">
-              <div className="content w-10/12 about-text relative z-10 pb-12" dangerouslySetInnerHTML={{ __html: `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` + datoCmsAbout.heading }}>
-              </div>
+              <motion.div
+                className="content w-full about-text relative z-10 pb-12"
+                variants={{
+                  enter: { transition: { staggerChildren: 0.03 }}
+                }}
+              >
+                <span className="block">
+                  <span className="block overflow-hidden">
+                    <motion.span variants={revealInOut} className="block w-full">I’m a web developer from Nottingham</motion.span>
+                  </span>
+                  <span className="block overflow-hidden">
+                    <motion.span variants={revealInOut} className="block w-full">with 10+ years of experience in</motion.span>
+                  </span>
+                  <span className="block overflow-hidden">
+                    <motion.span variants={revealInOut} className="block w-full">methodical html, css &amp; javascript. I’m </motion.span>
+                  </span>
+                  <span className="block overflow-hidden">
+                    <motion.span variants={revealInOut} className="block w-full">really interested in scaleable front-end</motion.span>
+                  </span>
+                  <span className="block overflow-hidden">
+                    <motion.span variants={revealInOut} className="block w-full">development, craft cms &amp; vuejs.</motion.span>
+                  </span>
+                </span>
+              </motion.div>
 
               <div className="w-2/3 md:w-5/12 xl:w-4/12 fixed z-0 bottom-0 right-0 mr-5 md:mr-8 mb-5 md:mb-8 opacity-15">
                 <Img fluid={ datoCmsAbout.image.fluid } className="w-full mb-0 pb-0" />

@@ -28,7 +28,8 @@
     "react-native-text-ticker": "^1.10.0",
     "react-rotating-text": "^1.4.1",
     "react-smooth-marquee": "^1.0.0",
-    "react-ticker": "^1.2.2"
+    "react-ticker": "^1.2.2",
+    "splitting": "^1.0.6"
   },
   "devDependencies": {
     "postcss-import": "^12.0.1",
