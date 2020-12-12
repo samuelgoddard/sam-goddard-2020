@@ -1,5 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 import { motion } from 'framer-motion'
 import { graphql } from "gatsby"
 import { SmoothScrollProvider } from "../components/locomotiveScroll"
@@ -30,6 +31,8 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                 </div>
               </div>
             </div>
+            
+            <Footer />
           </motion.div>
         </motion.section>
       </SmoothScrollProvider>
