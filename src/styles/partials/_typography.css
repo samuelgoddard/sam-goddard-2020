@@ -68,7 +68,7 @@ h2 {
 }
 
 .work-area {
-  @apply transition-all ease-in-out duration-300;
+  transition: opacity .5s ease-in-out;
   &:hover {
     .work-item {
       @apply opacity-25;
