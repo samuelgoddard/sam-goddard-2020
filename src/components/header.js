@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Marquee from "react-smooth-marquee"
 
 const Header = ({ theme }) => {
@@ -40,7 +41,7 @@ const Header = ({ theme }) => {
             </ul>
           </nav>
 
-          <a href="mailto:hello@samgoddard.co.uk" className="header-item hover:line-through focus:line-through ml-5 md:ml-24"><span className="hidden md:inline">Let's </span>Collab<span className="hidden sm:inline-block">orate</span></a>
+          <AnchorLink to="/#collaborate" stripHash className="header-item hover:line-through focus:line-through ml-5 md:ml-24"><span className="hidden md:inline">Let's </span>Collab<span className="hidden sm:inline">orate</span></AnchorLink>
         </div>
       </div>
     </header>

@@ -1,4 +1,5 @@
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Footer = ({ backToTopButton, borderColor }) => (
   <footer className="container--footer w-full bg-trasparent">
@@ -11,7 +12,14 @@ const Footer = ({ backToTopButton, borderColor }) => (
           <li><a href="mailto:hello@samgoddard.co.uk" className="footer-item hover:line-through focus:line-through mr-6 md:mr-8 xl:mr-10">Email</a></li>
 
           { backToTopButton && (
-            <li className="ml-auto"><a href="mailto:hello@samgoddard.co.uk" className="footer-item hover:line-through focus:line-through ml-6 md:ml-8 xl:ml-10"><span className="hidden md:inline">Back to&nbsp;</span>Top</a></li>
+            <li className="ml-auto">
+              <AnchorLink
+                to="#top"
+                className="footer-item hover:line-through focus:line-through ml-6 md:ml-8 xl:ml-10"
+                title="Scroll back to the top of the page"
+              >
+                <span className="hidden md:inline">Back to&nbsp;</span>Top
+              </AnchorLink></li>
           )}
         </ul>
       </nav>

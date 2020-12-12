@@ -67,7 +67,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
             </ul>
           </div>
           
-          <div className="flex flex-wrap items-center">
+          <div className="flex flex-wrap items-center" id="collaborate">
             <div className="flex flex-wrap items-start">
               <div className="container container--content w-full flex flex-wrap">
                 <div className="w-full md:w-1/2 mb-3 md:mb-0">

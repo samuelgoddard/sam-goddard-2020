@@ -8,7 +8,7 @@ import "../styles/main.css"
 
 const Layout = ({ children, location }) => {
   return (
-    <div className={ location.pathname === '/about' || location.pathname === '/about/' ? "bg-white text-black transition-colors ease-in-out duration-700 delay-75 min-h-screen" : "bg-black text-white transition-color ease-in-out duration-700 delay-150 min-h-screen"}>
+    <div id="top" className={ location.pathname === '/about' || location.pathname === '/about/' ? "bg-white text-black transition-colors ease-in-out duration-700 delay-75 min-h-screen" : "bg-black text-white transition-color ease-in-out duration-700 delay-150 min-h-screen"}>
 
       <a className="skip-link sr-only" href="#scroll-container">Skip to main</a>
 

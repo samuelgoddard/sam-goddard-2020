@@ -8,6 +8,13 @@ module.exports = {
     author: `@samuelgoddard`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -25,
+        duration: 1000
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

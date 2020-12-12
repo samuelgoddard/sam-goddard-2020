@@ -77,7 +77,8 @@ h2 {
 }
 
 .work-item {
-
+  transition: opacity .5s ease-in-out;
+  
   &:hover, &:focus {
     @apply opacity-100 !important;
 
@@ -242,3 +243,8 @@ h2 {
 ::selection { 
   @apply bg-white text-black bg-opacity-100;
  }
+
+button {
+  border: none !important;
+  outline:none !important;
+}
