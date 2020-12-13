@@ -2,8 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Marquee from "react-smooth-marquee"
+import NowPlaying from "./nowPlaying"
 
-const Header = ({ theme }) => {
+const Header = ({ theme, path }) => {
   return (
     <header className={ `container container--header fixed top-0 left-0 right-0 w-full z-40 transition-colors ease-in-out duration-500 delay-75 ` + theme }>
       <div className="flex flex-wrap items-center border-b border-current border-opacity-75 pb-2">
@@ -13,7 +14,36 @@ const Header = ({ theme }) => {
         <span className="header-item ml-auto hidden lg:block ">
           <div className={ theme === 'text-black' ? `ticker-wrapper ticker-wrapper--light` : `ticker-wrapper ticker-wrapper--dark` }>
             <Marquee velocity={0.04}>
-              Creative Developer &nbsp;<em>&amp;</em>&nbsp; Sage One Trick &nbsp;<em>&amp;</em>&nbsp; Motion Developer &nbsp;<em>&amp;</em>&nbsp; Tailwind Fan &nbsp;<em>&amp;</em>&nbsp; Creative Developer &nbsp;<em>&amp;</em>&nbsp; Sage One Trick &nbsp;<em>&amp;</em>&nbsp; Motion Developer &nbsp;<em>&amp;</em>&nbsp; Tailwind Fan &nbsp;<em>&amp;</em>&nbsp; Creative Developer &nbsp;<em>&amp;</em>&nbsp; Sage One Trick &nbsp;<em>&amp;</em>&nbsp; Motion Developer &nbsp;<em>&amp;</em>&nbsp; Tailwind Fan &nbsp;<em>&amp;</em>&nbsp; Creative Developer &nbsp;<em>&amp;</em>&nbsp; Sage One Trick &nbsp;<em>&amp;</em>&nbsp; Motion Developer &nbsp;<em>&amp;</em>&nbsp; Tailwind Fan
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Sage One Trick
+              &nbsp;<em>—</em>&nbsp;
+              Motion Developer
+              &nbsp;<em>—</em>&nbsp;
+              Tailwind Fan
+              &nbsp;<em>—</em>&nbsp;
+              <NowPlaying/>
+              &nbsp;&nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Sage One Trick
+              &nbsp;<em>—</em>&nbsp;
+              Motion Developer
+              &nbsp;<em>—</em>&nbsp;
+              Tailwind Fan
+              &nbsp;<em>—</em>&nbsp;
+              <NowPlaying/>
+              &nbsp;&nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Sage One Trick
+              &nbsp;<em>—</em>&nbsp;
+              Motion Developer
+              &nbsp;<em>—</em>&nbsp;
+              Tailwind Fan
+              &nbsp;<em>—</em>&nbsp;
+              <NowPlaying/>
+              &nbsp;&nbsp;<em>—</em>&nbsp;
             </Marquee>
           </div>
           {/* <Ticker>
@@ -36,7 +66,7 @@ const Header = ({ theme }) => {
         <div className="ml-auto flex flex-wrap">
           <nav>
             <ul className="flex flex-wrap">
-              <li><Link activeClassName="is--active" className="header-item fake-strike ml-6 md:ml-8 xl:ml-12" to="/">Works</Link></li>
+              <li><Link activeClassName="is--active" className="header-item fake-strike ml-6 md:ml-8 xl:ml-12" to="/" partiallyActive={path === '/about' | path === '/about/' ? false : true }>Works</Link></li>
               <li><Link activeClassName="is--active" className="header-item fake-strike ml-6 md:ml-8 xl:ml-12" to="/about">About</Link></li>
             </ul>
           </nav>
