@@ -2,7 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from "framer-motion"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { fade, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 
@@ -54,7 +54,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
                         ) : (<></>)}
                       </span>
                       ) : (
-                        <a className="work-item block relative group" href={ node.url } target="_blank" rel="noopener noreferrer">
+                        <Link className="work-item block relative group" to={ `/${node.slug}` }>
                           <div className="overflow-hidden">
                             <div className="work-item__inner">
                               <motion.div variants={revealInOut} className="flex flex-wrap w-full">
@@ -67,11 +67,11 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
                             </div>
                           </div>
                           { node.image ? (
-                          <div className="work-item__image">
+                            <div className="work-item__image">
                               <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
                             </div>
                           ) : (<></>)}
-                        </a>
+                        </Link>
                       )}
                     </li>
                   )
@@ -88,7 +88,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
                 </div>
                 <div className="w-full md:w-1/2 mb-12">
                   <div className="pr-12 md:pr-12 lg:pr-24 xl:pr-32 mb-12 md:mb-16 xl:mb-20">
-                    <span className="block collab-text">&nbsp;&nbsp;&nbsp;&nbsp;Have a project in mind that you’d like to work with me on? I’m always open to hearing about new stuff, so give me a message through any of the channels below and I’ll be in touch.</span>
+                    <span className="block collab-text font-light">&nbsp;&nbsp;&nbsp;&nbsp;Have a project in mind that you’d like to work with me on? I’m always open to hearing about new stuff, so give me a message through any of the channels below and I’ll be in touch.</span>
                   </div>
 
                   <div className="mb-3 md:mb-5 xl:mb-8">

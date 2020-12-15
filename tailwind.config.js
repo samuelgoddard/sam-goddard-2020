@@ -35,6 +35,7 @@ module.exports = {
     container: false
   },
   variants: {
-    opacity: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus']
+    opacity: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus'],
+    margin: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus']
   }
 }

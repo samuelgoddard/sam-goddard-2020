@@ -27,3 +27,13 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Neue World Condensed';
+  src: local('Neue World Condensed Light'), local('NeueWorld-CondensedRegular'),
+      url('../fonts/NeueWorld-CondensedLight.woff2') format('woff2'),
+      url('../fonts/NeueWorld-CondensedLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

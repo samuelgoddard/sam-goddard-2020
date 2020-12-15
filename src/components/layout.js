@@ -14,7 +14,7 @@ const Layout = ({ children, location }) => {
 
       <div className="w-full h-screen fixed top-0 left-0 right-0 bottom-0 texture-overlay z-0 opacity-25"></div>
       
-      <Header theme={ location.pathname === '/about' || location.pathname === '/about/' ? "text-black" : "text-white" } />
+      <Header path={ location.pathname } theme={ location.pathname === '/about' || location.pathname === '/about/' ? "text-black" : "text-white" } />
       
       {/* { !location.pathname === '/about' && (
         <div className="header--mask"></div>

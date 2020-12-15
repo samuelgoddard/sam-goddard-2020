@@ -10,9 +10,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   @apply
     p-0
-    mb-6
-		leading-tight
-		font-bold;
+    mb-6;
 }
 
 h1 {
@@ -170,6 +168,48 @@ h2 {
   }
 }
 
+.work-item--small {
+  .work-item__title {
+    font-size: 1.5rem;
+
+    @screen md {
+      font-size: 2.6vw;
+    }
+
+    @screen xl {
+      font-size: 2vw;
+    }
+  }
+
+  .work-item__year {
+    @screen md {
+      font-size: 1.8vw;
+    }
+  }
+}
+
+.work-item-wrapper {
+  .work-item--small {
+    .work-item__inner {
+      @apply pt-5 pb-2;
+
+      @screen md {
+        padding-top: 2.9vw;
+      }
+
+      @screen lg {
+        padding-top: 2.5vw;
+      }
+      
+      @screen xl {
+        padding-top: 2vw;
+        /* padding-top: 1.25vw; */
+        /* padding-bottom: 0.5vw; */
+      }
+    }
+  }
+}
+
 
 .about-text {
   @apply block font-display leading-none tracking-tight;
@@ -185,6 +225,27 @@ h2 {
 
   @screen xl {
     font-size: 6vw;
+  }
+}
+
+.work-title {
+  @apply block font-display leading-negative tracking-tight;
+  font-size: 2.85rem;
+  padding-top: 0.65rem;
+
+  @screen md {
+    padding-top: 0.65vw;
+    font-size: 7vw;
+  }
+
+  @screen lg {
+    font-size: 7.45vw;
+    padding-top: 0.75vw;
+  }
+
+  @screen xl {
+    font-size: 9vw;
+    padding-top: 1vw;
   }
 }
 
@@ -265,5 +326,18 @@ button {
     &:after {
       @apply w-full;
     }
+  }
+}
+
+.fake-strike--perma {
+  @apply relative;
+  &:after {
+    content: " ";
+    /* transition: width 0.5s ease-in-out; */
+    @apply absolute  bg-current;
+    top: 49%;
+    left: 0;
+    width: 100%;
+    height: 1px;
   }
 }
