@@ -89,86 +89,13 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                       <li className={`block border-b border-black w-full pt-3 pb-1`}>
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap">
-                              <span className="block font-display font-light text-3xl w-1/2">CSSDA&nbsp;</span>
-                              <span className="block font-display font-light text-3xl w-1/2"><Link to="/isaac-j-powell" className="inline-block fake-strike ">Isaac J Powell</Link></span>
+                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
+                              <span className="block font-display font-light text-3xl w-1/2">CSS Design Awards</span>
+                              <span className="block text-2xl w-1/2">Public UI Award</span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
                               <span className="text-2xl md:ml-auto block md:pl-24">
-                              <Marquee velocity={0.025} className="w-32">
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UI Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public UX Award
-                                &nbsp;<em>—</em>&nbsp;
-                                Public Innovation Award
-                                &nbsp;<em>—</em>&nbsp;
-                              </Marquee>
+                                <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
                               </span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right">
@@ -183,66 +110,70 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                       <li className={`block border-b border-black w-full pt-3 pb-1`}>
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap">
+                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
+                              <span className="block font-display font-light text-3xl w-1/2">CSS Design Awards</span>
+                              <span className="block text-2xl w-1/2">Public UX Award</span>
+                            </div>
+                            <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
+                              <span className="text-2xl md:ml-auto block md:pl-24">
+                                <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
+                              </span>
+                            </div>
+                            <div className="w-1/2 md:w-1/4 md:text-right">
+                              <span className="text-xl block ml-auto">2019 —</span>
+                            </div>
+                          </motion.div>
+                        </div>
+                      </li>
+
+
+                      <li className={`block border-b border-black w-full pt-3 pb-1`}>
+                        <div className="overflow-hidden w-full">
+                          <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
+                              <span className="block font-display font-light text-3xl w-1/2">CSS Design Awards</span>
+                              <span className="block text-2xl w-1/2">Public Innovation Award</span>
+                            </div>
+                            <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
+                              <span className="text-2xl md:ml-auto block md:pl-24">
+                                <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
+                              </span>
+                            </div>
+                            <div className="w-1/2 md:w-1/4 md:text-right">
+                              <span className="text-xl block ml-auto">2019 —</span>
+                            </div>
+                          </motion.div>
+                        </div>
+                      </li>
+
+
+                      <li className={`block border-b border-black w-full pt-3 pb-1`}>
+                        <div className="overflow-hidden w-full">
+                          <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
                               <span className="block font-display font-light text-3xl w-1/2">Admire The Web</span>
-                              <span className="block font-display font-light text-3xl w-1/2"><Link to="/isaac-j-powell" className="inline-block fake-strike ">Isaac J Powell</Link></span>
+                              <span className="block text-2xl w-1/2">Featured Website</span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
                               <span className="text-2xl md:ml-auto block md:pl-24">
-                              <Marquee velocity={0.0225} className="w-32">
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                              </Marquee>
+                                <Marquee velocity={0.03} className="max-w-24 w-full">
+                                  <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
+                                  &nbsp;&nbsp;—&nbsp;&nbsp;
+                                  <Link to="/jess-bright" className="inline-block fake-strike--perma">Jess Bright</Link>
+                                  &nbsp;&nbsp;—&nbsp;&nbsp;
+                                  <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
+                                  &nbsp;&nbsp;—&nbsp;&nbsp;
+                                  <Link to="/jess-bright" className="inline-block fake-strike--perma">Jess Bright</Link>
+                                  &nbsp;&nbsp;—&nbsp;&nbsp;
+                                  <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
+                                  &nbsp;&nbsp;—&nbsp;&nbsp;
+                                  <Link to="/jess-bright" className="inline-block fake-strike--perma">Jess Bright</Link>
+                                  &nbsp;&nbsp;—&nbsp;&nbsp;
+                                </Marquee>
                               </span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019 —</span>
+                              <span className="text-xl block ml-auto">2019 — 20</span>
                             </div>
                           </motion.div>
                         </div>
@@ -251,62 +182,13 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                       <li className={`block border-b border-black w-full pt-3 pb-1`}>
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap">
+                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
                               <span className="block font-display font-light text-3xl w-1/2">Mindsparkle</span>
-                              <span className="block font-display font-light text-3xl w-1/2"><Link to="/isaac-j-powell" className="inline-block fake-strike ">Isaac J Powell</Link></span>
+                              <span className="block text-2xl w-1/2">Website Feature</span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
                               <span className="text-2xl md:ml-auto block md:pl-24">
-                              <Marquee velocity={0.018} className="w-32">
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                              </Marquee>
+                                <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
                               </span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right">
@@ -319,110 +201,13 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                       <li className={`block border-b border-black w-full pt-3 pb-1`}>
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap">
-                              <span className="block font-display font-light text-3xl w-1/2">Admire The Web</span>
-                              <span className="block font-display font-light text-3xl w-1/2"><Link to="/isaac-j-powell" className="inline-block fake-strike ">Jess Bright</Link></span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
-                              <span className="text-2xl md:ml-auto block md:pl-24">
-                              <Marquee velocity={0.023} className="w-32">
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                                Featured Website
-                                &nbsp;<em>—</em>&nbsp;
-                              </Marquee>
-                              </span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2020 —</span>
-                            </div>
-                          </motion.div>
-                        </div>
-                      </li>
-
-                      <li className={`block border-b border-black w-full pt-3 pb-1`}>
-                        <div className="overflow-hidden w-full">
-                          <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap">
+                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
                               <span className="block font-display font-light text-3xl w-1/2">Heritage In Motion</span>
-                              <span className="block font-display font-light text-3xl w-1/2"><Link to="/isaac-j-powell" className="inline-block fake-strike ">V&amp;A Culture In Crisis</Link></span>
+                              <span className="block text-2xl w-1/2">Website Of The Year</span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
                               <span className="text-2xl md:ml-auto block md:pl-24">
-                              <Marquee velocity={0.027} className="w-32">
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                                Website Of The Year
-                                &nbsp;<em>—</em>&nbsp;
-                              </Marquee>
+                                <Link to="/v-and-a-culture-in-crisis" className="inline-block fake-strike--perma">V&amp;A Culture In Crisis</Link>
                               </span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right">
