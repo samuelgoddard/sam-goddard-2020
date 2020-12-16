@@ -230,27 +230,53 @@ h2 {
 
 .work-title {
   @apply block font-display leading-negative tracking-tight;
-  font-size: 2.85rem;
+  font-size: 5.5rem;
   padding-top: 0.65rem;
 
   @screen md {
     padding-top: 0.65vw;
-    font-size: 7vw;
+    font-size: 8.2vw;
   }
 
   @screen lg {
-    font-size: 7.45vw;
+    font-size: 8.5vw;
     padding-top: 0.75vw;
   }
 
   @screen xl {
-    font-size: 9vw;
+    font-size: 9.5vw;
     padding-top: 1vw;
   }
 }
 
+.site-link {
+  @apply block;
+  font-size: 3.5rem;
+
+  @screen md {
+    font-size: 3.5vw;
+  }
+
+  @screen lg {
+    font-size: 3vw;
+  }
+
+  @screen xl {
+    font-size: 3.5vw;
+  }
+}
+
+
+.work-image {
+  padding-bottom: 3rem;
+
+  @screen md {
+    padding-bottom: 5vw;
+  }
+}
+
 .collab-text {
-  @apply block font-display leading-none tracking-tight;
+  @apply block font-display leading-none tracking-mini;
   font-size: 2.7rem;
 
   @screen md {

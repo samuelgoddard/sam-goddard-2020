@@ -90,16 +90,16 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                             <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-3xl w-1/2">CSS Design Awards</span>
-                              <span className="block text-2xl w-1/2">Public UI Award</span>
+                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">CSS Design Awards</span>
+                              <span className="block text-xl md:text-2xl w-1/2">Public UI Award</span>
                             </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
-                              <span className="text-2xl md:ml-auto block md:pl-24">
+                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
+                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
                                 <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
                               </span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019 —</span>
+                              <span className="text-xl block ml-auto">2019</span>
                             </div>
                           </motion.div>
                         </div>
@@ -111,16 +111,16 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                             <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-3xl w-1/2">CSS Design Awards</span>
-                              <span className="block text-2xl w-1/2">Public UX Award</span>
+                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">CSS Design Awards</span>
+                              <span className="block text-xl md:text-2xl w-1/2">Public UX Award</span>
                             </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
-                              <span className="text-2xl md:ml-auto block md:pl-24">
+                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
+                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
                                 <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
                               </span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019 —</span>
+                              <span className="text-xl block ml-auto">2019</span>
                             </div>
                           </motion.div>
                         </div>
@@ -131,16 +131,16 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                             <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-3xl w-1/2">CSS Design Awards</span>
-                              <span className="block text-2xl w-1/2">Public Innovation Award</span>
+                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">CSS Design Awards</span>
+                              <span className="block text-xl md:text-2xl w-1/2">Public Innovation Award</span>
                             </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
-                              <span className="text-2xl md:ml-auto block md:pl-24">
+                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
+                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
                                 <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
                               </span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019 —</span>
+                              <span className="text-xl block ml-auto">2019</span>
                             </div>
                           </motion.div>
                         </div>
@@ -151,11 +151,11 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                             <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-3xl w-1/2">Admire The Web</span>
-                              <span className="block text-2xl w-1/2">Featured Website</span>
+                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">Admire The Web</span>
+                              <span className="block text-xl md:text-2xl w-1/2">Featured Website</span>
                             </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
-                              <span className="text-2xl md:ml-auto block md:pl-24">
+                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
+                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
                                 <Marquee velocity={0.03} className="max-w-24 w-full">
                                   <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
                                   &nbsp;&nbsp;—&nbsp;&nbsp;
@@ -183,16 +183,16 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                             <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-3xl w-1/2">Mindsparkle</span>
-                              <span className="block text-2xl w-1/2">Website Feature</span>
+                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">Mindsparkle</span>
+                              <span className="block text-xl md:text-2xl w-1/2">Website Feature</span>
                             </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
-                              <span className="text-2xl md:ml-auto block md:pl-24">
+                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
+                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
                                 <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
                               </span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019 —</span>
+                              <span className="text-xl block ml-auto">2019</span>
                             </div>
                           </motion.div>
                         </div>
@@ -202,16 +202,16 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                             <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-3xl w-1/2">Heritage In Motion</span>
-                              <span className="block text-2xl w-1/2">Website Of The Year</span>
+                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">Heritage In Motion</span>
+                              <span className="block text-xl md:text-2xl w-1/2">Website Of The Year</span>
                             </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right pr-12 md:pr-0">
-                              <span className="text-2xl md:ml-auto block md:pl-24">
+                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
+                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
                                 <Link to="/v-and-a-culture-in-crisis" className="inline-block fake-strike--perma">V&amp;A Culture In Crisis</Link>
                               </span>
                             </div>
                             <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2020 —</span>
+                              <span className="text-xl block ml-auto">2020</span>
                             </div>
                           </motion.div>
                         </div>

@@ -119,6 +119,7 @@ html.has-scroll-dragging {
 
 .MarqueeContent {
     display: inline-block;
+    text-align: left;
 }
 
 .header-mask {

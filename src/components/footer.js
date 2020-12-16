@@ -19,7 +19,8 @@ const Footer = ({ backToTopButton, borderColor }) => (
                 title="Scroll back to the top of the page"
               >
                 <span className="hidden md:inline">Back to&nbsp;</span>Top
-              </AnchorLink></li>
+              </AnchorLink>
+            </li>
           )}
         </ul>
       </nav>

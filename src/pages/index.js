@@ -34,45 +34,24 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
                 {work.edges.map(({ node }, i) => {
                   return (
                     <li key={i} className={`work-item-wrapper block border-opacity-25 border-b border-white`}>
-                      { node.inProgress ? (
-                        <span className="work-item block relative group cursor-not-allowed" href={ node.url } target="_blank" rel="noopener noreferrer">
+                      <Link className="work-item block relative group" to={ `/${node.slug}` }>
                         <div className="overflow-hidden">
                           <div className="work-item__inner">
                             <motion.div variants={revealInOut} className="flex flex-wrap w-full">
                               <span className="work-item__index self-start">({ i < 9 ? '0' : ''}{ i + 1 })</span>
                               <span className="work-item__title">{ node.title }</span>
                               <span className="work-item__year">
-                                <span>Soon</span>
+                                <span>{ node.year }</span>
                               </span>
                             </motion.div>
                           </div>
                         </div>
                         { node.image ? (
-                        <div className="work-item__image">
+                          <div className="work-item__image">
                             <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
                           </div>
                         ) : (<></>)}
-                      </span>
-                      ) : (
-                        <Link className="work-item block relative group" to={ `/${node.slug}` }>
-                          <div className="overflow-hidden">
-                            <div className="work-item__inner">
-                              <motion.div variants={revealInOut} className="flex flex-wrap w-full">
-                                <span className="work-item__index self-start">({ i < 9 ? '0' : ''}{ i + 1 })</span>
-                                <span className="work-item__title">{ node.title }</span>
-                                <span className="work-item__year">
-                                  <span>{ node.year }</span>
-                                </span>
-                              </motion.div>
-                            </div>
-                          </div>
-                          { node.image ? (
-                            <div className="work-item__image">
-                              <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
-                            </div>
-                          ) : (<></>)}
-                        </Link>
-                      )}
+                      </Link>
                     </li>
                   )
                 })}
