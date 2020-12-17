@@ -197,11 +197,8 @@ const WorkPage = ({ data: { work }, location}) => {
             </div>
           </div>
 
-          <div className="w-full container relative z-20">
-            <div className="z-10 absolute bottom-0 left-0 right-0 h-64 w-full bg-gradient-to-t from-black via-black to-transparent"></div>
-            <div className="relative z-20">
-              <Footer borderColor="border-white" backToTopButton />
-            </div>
+          <div className="w-full container">
+            <Footer borderColor="border-white" backToTopButton />
           </div>
         </motion.div>
       </motion.section>

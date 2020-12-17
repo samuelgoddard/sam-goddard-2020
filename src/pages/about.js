@@ -230,11 +230,11 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                 </div>
                 <div className="w-full md:w-7/12 mb-12">
                   <div className="md:w-8/12 xl:w-8/12">
-                    <p className="block collab-text font-light">&nbsp;&nbsp;&nbsp;&nbsp;I’ve loved video games since I got a SEGA Megadrive for Christmas as a kid and would love to one day work in the gaming industry.</p>
+                    <p className="block collab-text font-light">&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                    <p className="block collab-text font-light">I peaked at top 5% EUW in Season 5 of League, not bad for a washed up 30 year old. Final Fantasy VII, Ocarina of Time and Red Alert 2 are my favourite games of all time.</p>
+                    <p className="block collab-text font-light">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
 
-                    <p className="block collab-text font-light">I’m currently being hard carried (on multiple accounts) by Sic Mundus, one of Europes premier gamers &amp; designers.</p>
+                    <p className="block collab-text font-light">Velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   </div>
                 </div>
               </div>

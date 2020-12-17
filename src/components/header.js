@@ -11,8 +11,7 @@ const Header = ({ theme, path }) => {
         <Link className="header-item fake-strike" to="/"><span className="hidden md:block">Sam Goddard</span><span className="block md:hidden">SG</span></Link>
         <span className="header-item ml-1 md:ml-8">’89 —</span>
 
-        <span className="header-item ml-auto hidden lg:flex">
-          <span className="block mr-3">Δ</span>
+        <span className="header-item ml-auto hidden lg:flex items-center">
           <div className={ theme === 'text-black' ? `ticker-wrapper ticker-wrapper--light` : `ticker-wrapper ticker-wrapper--dark` }>
             <Marquee velocity={0.04}>
               Creative Developer

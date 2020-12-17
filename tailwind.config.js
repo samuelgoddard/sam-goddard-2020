@@ -7,6 +7,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spinBackwards 10s linear infinite',
+      },
       colors: {
         black: "#262525",
         white: "#BEBEBE"

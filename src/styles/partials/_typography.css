@@ -368,3 +368,12 @@ button {
     height: 1px;
   }
 }
+
+@keyframes spinBackwards {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
