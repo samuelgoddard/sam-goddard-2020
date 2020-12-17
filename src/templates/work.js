@@ -26,7 +26,7 @@ const WorkPage = ({ data: { work }, location}) => {
         <motion.div variants={fade}>
           <div className="container container--content-about flex flex-wrap min-h-screen pb-2 md:pb-4 relative">
             { !work.inProgress && work.url ? (
-              <a href={ work.url } target="_blank" rel="noopener noreferrer" className="md:fixed bottom-0 right-0 mr-8 md:mb-5 site-link hidden md:flex items-center">
+              <a href={ work.url } target="_blank" rel="noopener noreferrer" className="md:fixed bottom-0 right-0 mr-8 md:mb-20 site-link hidden md:flex items-center">
                 <span className="flex h-3 w-3 relative -mt-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-50"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
@@ -44,7 +44,8 @@ const WorkPage = ({ data: { work }, location}) => {
             <div className="w-full flex flex-wrap items-center">
               <div className="w-full md:w-2/3 relative h-full flex">
                 <div className="absolute top-0 left-0 right-0 bottom-0 work-image">
-                  <Img fluid={work.image.fluid} className="w-full h-full object-cover object-center opacity-25 z-0" />
+                  <Img fluid={work.desktopImage ? work.desktopImage.fluid : work.image.fluid } className="w-full h-full object-cover object-center opacity-25 z-0 hidden md:block" />
+                  <Img fluid={work.mobileImage ? work.mobileImage.fluid : work.image.fluid } className="w-full h-full object-cover object-center opacity-25 z-0 block md:hidden" />
                 </div>
 
                 <div className="mt-auto self-end relative z-10">
@@ -101,7 +102,7 @@ const WorkPage = ({ data: { work }, location}) => {
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
                 </span>
                 <span className="pl-3">
-                  Visit live site
+                  ☀ Visit live site
                 </span>
               </a>
             ) : (
@@ -226,6 +227,22 @@ export const query = graphql`
         fluid(
           maxWidth: 1600,
           imgixParams: {w: "1600", h: "900", fit: "crop" }) {
+          ...GatsbyDatoCmsFluid
+        }
+        alt
+      }
+      desktopImage {
+        fluid(
+          maxWidth: 1920,
+          imgixParams: {w: "1920", h: "1500", fit: "crop" }) {
+          ...GatsbyDatoCmsFluid
+        }
+        alt
+      }
+      mobileImage {
+        fluid(
+          maxWidth: 800,
+          imgixParams: {w: "800", h: "1300", fit: "crop" }) {
           ...GatsbyDatoCmsFluid
         }
         alt
