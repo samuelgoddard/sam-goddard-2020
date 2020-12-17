@@ -221,6 +221,25 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                 </ul>
               </div>
             </motion.div>
+
+            <div className="flex flex-wrap items-center">
+            <div className="flex flex-wrap items-start">
+              <div className="container container--content w-full flex flex-wrap">
+                <div className="w-full md:w-4/12 mb-3 md:mb-0">
+                  <span className="block text-2xl md:mb-8">About Me</span>
+                </div>
+                <div className="w-full md:w-7/12 mb-12">
+                  <div className="md:w-8/12 xl:w-8/12">
+                    <p className="block collab-text font-light">&nbsp;&nbsp;&nbsp;&nbsp;I’ve loved video games since I got a SEGA Megadrive for Christmas as a kid and would love to one day work in the gaming industry.</p>
+
+                    <p className="block collab-text font-light">I peaked at top 5% EUW in Season 5 of League, not bad for a washed up 30 year old. Final Fantasy VII, Ocarina of Time and Red Alert 2 are my favourite games of all time.</p>
+
+                    <p className="block collab-text font-light">I’m currently being hard carried (on multiple accounts) by Sic Mundus, one of Europes premier gamers &amp; designers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
             
             <motion.div
               variants={{

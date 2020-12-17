@@ -235,7 +235,7 @@ h2 {
 
   @screen md {
     padding-top: 0.65vw;
-    font-size: 8.2vw;
+    font-size: 9vw;
   }
 
   @screen lg {
@@ -251,18 +251,19 @@ h2 {
 
 .site-link {
   @apply block;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
+  @apply -mt-2;
 
   @screen md {
-    font-size: 3.5vw;
+    font-size: 2.95vw;
   }
 
   @screen lg {
-    font-size: 3vw;
+    font-size: 2.75vw;
   }
 
   @screen xl {
-    font-size: 3.5vw;
+    font-size: 2.65vw;
   }
 }
 
@@ -277,7 +278,7 @@ h2 {
 
 .collab-text {
   @apply block font-display leading-none tracking-mini;
-  font-size: 2.7rem;
+  font-size: 2.1rem;
 
   @screen md {
     font-size: 4.1vw;
