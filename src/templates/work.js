@@ -26,7 +26,7 @@ const WorkPage = ({ data: { work }, location}) => {
         <motion.div variants={fade}>
           <div className="container container--content-about flex flex-wrap min-h-screen pb-2 md:pb-4 relative">
             { !work.inProgress && work.url ? (
-              <a href={ work.url } target="_blank" rel="noopener noreferrer" className="md:fixed bottom-0 right-0 mr-8 md:mb-20 site-link hidden md:flex items-center">
+              <a href={ work.url } target="_blank" rel="noopener noreferrer" className="md:fixed bottom-0 right-0 mr-8 md:mb-8 site-link hidden md:flex items-center z-0">
                 <span className="flex h-3 w-3 relative -mt-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-50"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
@@ -102,7 +102,7 @@ const WorkPage = ({ data: { work }, location}) => {
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
                 </span>
                 <span className="pl-3">
-                  ☀ Visit live site
+                  Visit live site
                 </span>
               </a>
             ) : (
@@ -197,8 +197,11 @@ const WorkPage = ({ data: { work }, location}) => {
             </div>
           </div>
 
-          <div className="w-full container">
-            <Footer borderColor="border-white" backToTopButton />
+          <div className="w-full container relative z-20">
+            <div className="z-10 absolute bottom-0 left-0 right-0 h-64 w-full bg-gradient-to-t from-black via-black to-transparent"></div>
+            <div className="relative z-20">
+              <Footer borderColor="border-white" backToTopButton />
+            </div>
           </div>
         </motion.div>
       </motion.section>
