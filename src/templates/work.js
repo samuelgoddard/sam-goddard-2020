@@ -212,6 +212,14 @@ export const query = graphql`
     work: datoCmsWork(slug: { eq: $slug }) {
       title
       url
+      metaTags {
+        title
+        description
+        twitterCard
+        image {
+          url
+        }
+      }
       year
       inProgress
       image {
