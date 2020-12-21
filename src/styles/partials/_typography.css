@@ -57,11 +57,41 @@ h2 {
   }
 }
 
+.header-item--large {
+  @apply block text-xl;
+
+  @screen md {
+    font-size: 3vw;
+  }
+
+  @screen lg {
+    font-size: 2.7vw;
+  }
+  
+  @screen xl {
+    font-size: 2.4vw;
+  }
+}
+
 .footer-item {
   @apply block text-lg;
 
   @screen lg {
     font-size: 1.55vw;
+  }
+}
+
+.header-item--countup {
+  width: 1.5rem;
+
+  @screen md {
+    width: 3vw;
+  }
+  @screen lg {
+    width: 2.8vw;
+  }
+  @screen xl {
+    width: 2.7vw;
   }
 }
 
@@ -213,7 +243,7 @@ h2 {
 
 .about-text {
   @apply block font-display leading-none tracking-tight;
-  font-size: 2.85rem;
+  font-size: 12.2vw;
 
   @screen md {
     font-size: 6.85vw;

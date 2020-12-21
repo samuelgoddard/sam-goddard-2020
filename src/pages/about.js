@@ -55,9 +55,38 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                     </span>
                   </span>
 
-                  <motion.span variants={fade} className="block md:hidden">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a creative developer from Nottingham with a focus on methodical html, css &amp; javascript. I enjoy making websites that are innovative, user-focused, accessible &amp; performant.
-                  </motion.span>
+                  <span className="block md:hidden">
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a creative</motion.span>
+                    </span>
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">developer from</motion.span>
+                    </span>
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">Nottingham with a</motion.span>
+                    </span>
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">focus on methodical</motion.span>
+                    </span>
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">html, css &amp; javascript.</motion.span>
+                    </span>
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">I enjoy making</motion.span>
+                    </span>
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">websites that are</motion.span>
+                    </span>
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">innovative, user-</motion.span>
+                    </span>
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">focused, accessible</motion.span>
+                    </span>
+                    <span className="block overflow-hidden">
+                      <motion.span variants={revealInOut} className="block w-full">&amp; performant.</motion.span>
+                    </span>
+                  </span>
                 </motion.div>
 
                 <motion.div

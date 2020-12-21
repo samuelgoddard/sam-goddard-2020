@@ -21,6 +21,7 @@
     "locomotive-scroll": "^4.0.4",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-countup": "^4.3.3",
     "react-div-100vh": "^0.5.6",
     "react-dom": "^16.12.0",
     "react-double-marquee": "^1.0.6",

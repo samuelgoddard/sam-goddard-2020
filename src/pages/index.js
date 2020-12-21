@@ -3,8 +3,9 @@ import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from "framer-motion"
 import { graphql, Link } from "gatsby"
-import { fade, revealInOut } from "../helpers/transitionHelper"
+import { fade, revealInOut, revealInOutIn } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
+import CountUp from "react-countup"
 
 const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
   return (
@@ -15,14 +16,13 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
         pathnameOverride={location.pathname}
         imageOverride={datoCmsHome.metaTags && datoCmsHome.metaTags.image ? datoCmsHome.metaTags.image.url : null }
       />
-    
+
       <motion.section
         data-scroll-section
         initial="initial"
         animate="enter"
         exit="exit"
         className="text-white"
-      
       >
         <motion.div variants={fade}>
           <motion.div variants={{
@@ -40,7 +40,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
                             <motion.div variants={revealInOut} className="flex flex-wrap w-full">
                               <span className="work-item__index self-start">({ i < 9 ? '0' : ''}{ i + 1 })</span>
                               <span className="work-item__title">{ node.title }</span>
-                              <span className="work-item__year">
+                              <span className="work-item__year pr-1">
                                 <span>{ node.year }</span>
                               </span>
                             </motion.div>

@@ -16,34 +16,32 @@ const Header = ({ theme, path }) => {
             <Marquee velocity={0.04}>
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Sage One Trick
+              Available for work in February 2021
               &nbsp;<em>—</em>&nbsp;
-              Motion Developer
-              &nbsp;<em>—</em>&nbsp;
-              Tailwind Fan
-              &nbsp;<em>—</em>&nbsp;
-              <NowPlaying/>
-              &nbsp;&nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Sage One Trick
+              Available for work in February 2021
               &nbsp;<em>—</em>&nbsp;
-              Motion Developer
-              &nbsp;<em>—</em>&nbsp;
-              Tailwind Fan
-              &nbsp;<em>—</em>&nbsp;
-              <NowPlaying/>
-              &nbsp;&nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Sage One Trick
+              Available for work in February 2021
               &nbsp;<em>—</em>&nbsp;
-              Motion Developer
+              Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Tailwind Fan
+              Available for work in February 2021
               &nbsp;<em>—</em>&nbsp;
-              <NowPlaying/>
-              &nbsp;&nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available for work in February 2021
+              &nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available for work in February 2021
+              &nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available for work in February 2021
+              &nbsp;<em>—</em>&nbsp;
             </Marquee>
           </div>
           {/* <Ticker>

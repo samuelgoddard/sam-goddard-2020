@@ -6,9 +6,9 @@ const Footer = ({ backToTopButton, borderColor }) => (
     <div className={`border-t ${ borderColor } border-opacity-75 pt-3 md:pt-4`}>
       <nav>
         <ul className="flex flex-wrap items-center">
-          <li><a href="https://twitter.com/samuelgoddard?lang=en" className="footer-item fake-strike mr-6 md:mr-8 xl:mr-10">Twitter</a></li>
-          <li><a href="https://open.spotify.com/user/sam_goddard" className="footer-item fake-strike mr-6 md:mr-8 xl:mr-10">Spotify</a></li>
-          <li><a href="https://github.com/samuelgoddard" className="footer-item fake-strike mr-6 md:mr-8 xl:mr-10">Github</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/samuelgoddard?lang=en" className="footer-item fake-strike mr-6 md:mr-8 xl:mr-10">Twitter</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/user/sam_goddard" className="footer-item fake-strike mr-6 md:mr-8 xl:mr-10">Spotify</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/samuelgoddard" className="footer-item fake-strike mr-6 md:mr-8 xl:mr-10">Github</a></li>
           <li><a href="mailto:hello@samgoddard.co.uk" className="footer-item fake-strike mr-6 md:mr-8 xl:mr-10">Email</a></li>
 
           { backToTopButton && (
