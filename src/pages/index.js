@@ -67,7 +67,9 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
                 </div>
                 <div className="w-full md:w-1/2 mb-12">
                   <div className="pr-12 md:pr-12 lg:pr-24 xl:pr-32 mb-12 md:mb-16 xl:mb-20">
-                    <span className="block collab-text font-light">&nbsp;&nbsp;&nbsp;&nbsp;Have a project in mind that you’d like to work with me on? I’m always open to hearing about new stuff, so give me a message through any of the channels below and I’ll be in touch.</span>
+                    <span className="block collab-text font-light">
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;Have a project in mind that you’d like to work with me on? I’m always open to hearing about new stuff, so give me a message through any of the channels below and I’ll be in touch.</p>
+                    </span>
                   </div>
 
                   <div className="mb-3 md:mb-5 xl:mb-8">

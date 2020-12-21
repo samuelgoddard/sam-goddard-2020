@@ -36,27 +36,27 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                 >
                   <span className="hidden md:block">
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a web developer from</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a creative developer from</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">Nottingham with 10+ years of</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">Nottingham with a focus on</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">experience in methodical html,</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">methodical html, css &amp; javascript</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">css &amp; javascript. I’m interested</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">I enjoy making websites that</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">in scaleable code, craft cms</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">are innovative, user-focused,</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">&amp; vuejs.</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">accessible &amp; performant.</motion.span>
                     </span>
                   </span>
 
                   <motion.span variants={fade} className="block md:hidden">
-                    I’m a web developer from Nottingham with 10+ years of experience in methodical html, css &amp; javascript. I’m really interested in scaleable front-end development, craft cms &amp; vuejs.
+                    I’m a creative developer from Nottingham with many years of experience in methodical html, css &amp; javascript. I enjoy making websites that are innovative, user-focused and performant.
                   </motion.span>
                 </motion.div>
 
@@ -229,12 +229,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                   <span className="block text-2xl md:mb-8">About Me</span>
                 </div>
                 <div className="w-full md:w-7/12 mb-12">
-                  <div className="md:w-8/12 xl:w-8/12">
-                    <p className="block collab-text font-light">&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                    <p className="block collab-text font-light">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
-
-                    <p className="block collab-text font-light">Velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <div className="md:w-8/12 xl:w-8/12 collab-text font-light" dangerouslySetInnerHTML={{ __html: datoCmsAbout.bio }}>
                   </div>
                 </div>
               </div>
@@ -271,6 +266,7 @@ export const query = graphql`
           url
         }
       }
+      bio
       title
       heading
       image {

@@ -277,19 +277,26 @@ h2 {
 }
 
 .collab-text {
-  @apply block font-display leading-none tracking-mini;
-  font-size: 2.1rem;
+  p {
+    @apply block font-display leading-none tracking-mini mb-8;
+    font-size: 2.1rem;
 
-  @screen md {
-    font-size: 4.1vw;
-  }
+    @screen md {
+      font-size: 4.1vw;
+      margin-bottom: 2.55vw;
+    }
 
-  @screen lg {
-    font-size: 3.85vw;
-  }
+    @screen lg {
+      font-size: 3.85vw;
+    }
 
-  @screen xl {
-    font-size: 3.5vw;
+    @screen xl {
+      font-size: 3.35vw;
+    }
+
+    &:last-of-type {
+      @apply mb-0;
+    }
   }
 }
 

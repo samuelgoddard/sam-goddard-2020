@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { graphql, Link } from "gatsby"
 import { fade, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
+import Div100vh from "react-div-100vh"
 
 const WorkPage = ({ data: { work }, location}) => {
   return (
@@ -24,7 +25,7 @@ const WorkPage = ({ data: { work }, location}) => {
         className="text-white"
       >
         <motion.div variants={fade}>
-          <div className="container container--content-about flex flex-wrap min-h-screen pb-2 md:pb-4 relative">
+          <Div100vh className="container container--content-about flex flex-wrap pb-2 md:pb-4 relative">
             { !work.inProgress && work.url ? (
               <a href={ work.url } target="_blank" rel="noopener noreferrer" className="md:fixed bottom-0 right-0 mr-8 md:mb-8 site-link hidden md:flex items-center z-0">
                 <span className="flex h-3 w-3 relative -mt-2">
@@ -92,9 +93,9 @@ const WorkPage = ({ data: { work }, location}) => {
                 </ul>
               </div>
             </div>
-          </div>
+          </Div100vh>
 
-          <div className="w-full relative block md:hidden container">
+          <div className="w-full relative block md:hidden container mt-2">
             { !work.inProgress && work.url ? (
               <a href={ work.url } target="_blank" rel="noopener noreferrer" className="site-link flex items-center mb-6">
                 <span className="flex h-3 w-3 relative -mt-2">
@@ -188,9 +189,7 @@ const WorkPage = ({ data: { work }, location}) => {
                   </div>
                 </div>
                 <div className="w-full md:w-7/12 mb-12">
-                  <div className="md:w-8/12 xl:w-7/12">
-                    <p className="block collab-text font-light">&nbsp;&nbsp;&nbsp;&nbsp;Fusce at sollicitudin quam. Praesent sit amet eros dolor. Aenean tempus odio vel lorem ornare, in finibus justo rutrum. Integer semper, mi id posuere auctor, orci neque..</p>
-                    <p className="block collab-text font-light">Sagittis risus, id lobortis metus ligula nec libero. Integer imperdiet.</p>
+                  <div className="md:w-8/12 xl:w-7/12 collab-text font-light" dangerouslySetInnerHTML={{ __html: work.overview }}>
                   </div>
                 </div>
               </div>
@@ -271,6 +270,7 @@ export const query = graphql`
           metaText
         }
       }
+      overview
       slug
     }
   }
