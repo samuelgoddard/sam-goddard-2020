@@ -95,7 +95,7 @@ const WorkPage = ({ data: { work }, location}) => {
             </div>
           </Div100vh>
 
-          <div className="w-full relative block md:hidden container mt-2">
+          <div className="w-full relative block md:hidden container mt-6 md:mt-0">
             { !work.inProgress && work.url ? (
               <a href={ work.url } target="_blank" rel="noopener noreferrer" className="site-link flex items-center mb-6">
                 <span className="flex h-3 w-3 relative -mt-2">

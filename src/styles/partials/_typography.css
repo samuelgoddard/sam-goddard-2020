@@ -77,7 +77,7 @@ h2 {
 .work-item {
   transition: opacity .5s ease-in-out;
 
-  &:hover, &:focus {
+  &:hover {
     @apply opacity-100 !important;
 
     .work-item__inner {
