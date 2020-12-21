@@ -42,7 +42,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                       <motion.span variants={revealInOut} className="block w-full">Nottingham with a focus on</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">methodical html, css &amp; javascript</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">methodical html, css &amp; javascript.</motion.span>
                     </span>
                     <span className="block overflow-hidden">
                       <motion.span variants={revealInOut} className="block w-full">I enjoy making websites that</motion.span>
