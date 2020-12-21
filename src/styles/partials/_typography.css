@@ -42,8 +42,8 @@ h2 {
 
     &:before {
       content: ' ';
-      width: 5px;
-      height: 5px;
+      width: 7px;
+      height: 7px;
       margin-top: 10px;
       @apply rounded-full inline-block -ml-3 absolute top-0 left-0 font-display not-italic leading-none bg-current;
 
@@ -85,7 +85,7 @@ h2 {
     }
     
     .work-item__image {
-      @apply opacity-15;
+      @apply opacity-20;
     }
   }
 }

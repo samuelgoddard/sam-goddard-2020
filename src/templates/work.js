@@ -27,8 +27,8 @@ const WorkPage = ({ data: { work }, location}) => {
         <motion.div variants={fade}>
           <Div100vh className="container container--content-about flex flex-wrap pb-2 md:pb-4 relative">
             { !work.inProgress && work.url ? (
-              <a href={ work.url } target="_blank" rel="noopener noreferrer" className="md:fixed bottom-0 right-0 mr-8 md:mb-8 site-link hidden md:flex items-center z-0">
-                <span className="flex h-3 w-3 relative -mt-2">
+              <a href={ work.url } target="_blank" rel="noopener noreferrer" className="md:fixed bottom-0 right-0 mr-8 md:mb-8 site-link hidden md:flex items-center z-0 fake-strike">
+                <span className="flex h-3 w-3 relative -mt-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-50"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
                 </span>
@@ -45,8 +45,8 @@ const WorkPage = ({ data: { work }, location}) => {
             <div className="w-full flex flex-wrap items-center">
               <div className="w-full md:w-2/3 relative h-full flex">
                 <div className="absolute top-0 left-0 right-0 bottom-0 work-image">
-                  <Img fluid={work.desktopImage ? work.desktopImage.fluid : work.image.fluid } className="w-full h-full object-cover object-center opacity-25 z-0 hidden md:block" />
-                  <Img fluid={work.mobileImage ? work.mobileImage.fluid : work.image.fluid } className="w-full h-full object-cover object-center opacity-25 z-0 block md:hidden" />
+                  <Img fluid={work.desktopImage ? work.desktopImage.fluid : work.image.fluid } className="w-full h-full object-cover object-center opacity-35 z-0 hidden md:block" />
+                  <Img fluid={work.mobileImage ? work.mobileImage.fluid : work.image.fluid } className="w-full h-full object-cover object-center opacity-35 z-0 block md:hidden" />
                 </div>
 
                 <div className="mt-auto self-end relative z-10">
@@ -95,10 +95,10 @@ const WorkPage = ({ data: { work }, location}) => {
             </div>
           </Div100vh>
 
-          <div className="w-full relative block md:hidden container mt-6 md:mt-0">
+          <div className="w-full relative block md:hidden container mt-2">
             { !work.inProgress && work.url ? (
-              <a href={ work.url } target="_blank" rel="noopener noreferrer" className="site-link flex items-center mb-6">
-                <span className="flex h-3 w-3 relative -mt-2">
+              <a href={ work.url } target="_blank" rel="noopener noreferrer" className="site-link flex items-center mb-12">
+                <span className="flex h-3 w-3 relative -mt-1 fake-strike">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-50"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
                 </span>
@@ -189,7 +189,7 @@ const WorkPage = ({ data: { work }, location}) => {
                   </div>
                 </div>
                 <div className="w-full md:w-7/12 mb-12">
-                  <div className="md:w-8/12 xl:w-7/12 collab-text font-light" dangerouslySetInnerHTML={{ __html: work.overview }}>
+                  <div className="w-10/12 md:w-8/12 xl:w-7/12 2xl:w-1/2 collab-text font-light" dangerouslySetInnerHTML={{ __html: work.overview }}>
                   </div>
                 </div>
               </div>

@@ -56,7 +56,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                   </span>
 
                   <motion.span variants={fade} className="block md:hidden">
-                    I’m a creative developer from Nottingham with many years of experience in methodical html, css &amp; javascript. I enjoy making websites that are innovative, user-focused and performant.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a creative developer from Nottingham with a focus on methodical html, css &amp; javascript. I enjoy making websites that are innovative, user-focused, accessible &amp; performant.
                   </motion.span>
                 </motion.div>
 
@@ -66,7 +66,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                   }}
                 >
                   <motion.div variants={fadeSlow}>
-                    <div className="w-2/3 md:w-7/12 xl:w-1/2 absolute z-0 bottom-0 right-0 pl-8 opacity-75">
+                    <div className="w-full md:w-7/12 xl:w-1/2 absolute z-0 bottom-0 right-0 pl-8 opacity-75">
                       <Img fluid={ datoCmsAbout.image.fluid } className="w-full mb-0 pb-0" />
                     </div>
                   </motion.div>
@@ -229,7 +229,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                   <span className="block text-2xl md:mb-8">About Me</span>
                 </div>
                 <div className="w-full md:w-7/12 mb-12">
-                  <div className="md:w-8/12 xl:w-8/12 collab-text font-light" dangerouslySetInnerHTML={{ __html: datoCmsAbout.bio }}>
+                  <div className="w-10/12 md:w-8/12 xl:w-8/12 2xl:w-7/12 collab-text font-light" dangerouslySetInnerHTML={{ __html: datoCmsAbout.bio }}>
                   </div>
                 </div>
               </div>
