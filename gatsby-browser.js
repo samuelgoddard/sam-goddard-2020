@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./src/components/layout";
 
-const transitionDelay = 400;
+const transitionDelay = 450;
 
 export const wrapPageElement = ({ element, props }) => {
   return <Layout {...props}>{element}</Layout>;

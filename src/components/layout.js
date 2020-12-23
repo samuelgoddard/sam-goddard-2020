@@ -97,7 +97,7 @@ class Layout extends React.Component {
                   <motion.div
                     animate={{ opacity: 0, scale: 1.1 }}
                     transition={{ duration: 0.65, delay: 3.85, ease: [0.76, 0, 0.24, 1] }}
-                    className="w-full h-full relative flex flex-wrap items-center justify-center z-50 bg-black"
+                    className="w-full h-full relative flex flex-wrap items-center justify-center z-50 bg-black text-white"
                   >
                     <span className="flex overflow-hidden">
                       <motion.span variants={revealInOutIn} className="flex">

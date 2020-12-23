@@ -109,149 +109,101 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                 enter: { transition: { staggerChildren: 0.02 }}
               }}
             >
-              <div className="container container--content">
+              <motion.div variants={fadeSlow} className="container container--content">
 
-                <span className="block text-xl mb-4">Features &amp; Awards</span>
-                <ul className="block w-full border-black border-t">
-                  {/* {work.edges.map(({ node }, i) => {
-                    return ( */}
-                      <li className={`block border-b border-black w-full pt-3 pb-1`}>
-                        <div className="overflow-hidden w-full">
-                          <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">CSS Design Awards</span>
-                              <span className="block text-xl md:text-2xl w-1/2">Public UI Award</span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
-                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
-                                <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
-                              </span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019</span>
-                            </div>
-                          </motion.div>
-                        </div>
-                      </li>
+                <span className="block text-base mb-3 uppercase">Features &amp; Awards</span>
 
-
-
-                      <li className={`block border-b border-black w-full pt-3 pb-1`}>
-                        <div className="overflow-hidden w-full">
-                          <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">CSS Design Awards</span>
-                              <span className="block text-xl md:text-2xl w-1/2">Public UX Award</span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
-                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
-                                <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
-                              </span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019</span>
-                            </div>
-                          </motion.div>
-                        </div>
-                      </li>
-
-
-                      <li className={`block border-b border-black w-full pt-3 pb-1`}>
-                        <div className="overflow-hidden w-full">
-                          <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">CSS Design Awards</span>
-                              <span className="block text-xl md:text-2xl w-1/2">Public Innovation Award</span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
-                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
-                                <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
-                              </span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019</span>
-                            </div>
-                          </motion.div>
-                        </div>
-                      </li>
-
-
-                      <li className={`block border-b border-black w-full pt-3 pb-1`}>
-                        <div className="overflow-hidden w-full">
-                          <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">Admire The Web</span>
-                              <span className="block text-xl md:text-2xl w-1/2">Featured Website</span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
-                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
-                                <Marquee velocity={0.03} className="max-w-24 w-full">
-                                  <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
-                                  &nbsp;&nbsp;—&nbsp;&nbsp;
-                                  <Link to="/jess-bright" className="inline-block fake-strike--perma">Jess Bright</Link>
-                                  &nbsp;&nbsp;—&nbsp;&nbsp;
-                                  <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
-                                  &nbsp;&nbsp;—&nbsp;&nbsp;
-                                  <Link to="/jess-bright" className="inline-block fake-strike--perma">Jess Bright</Link>
-                                  &nbsp;&nbsp;—&nbsp;&nbsp;
-                                  <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
-                                  &nbsp;&nbsp;—&nbsp;&nbsp;
-                                  <Link to="/jess-bright" className="inline-block fake-strike--perma">Jess Bright</Link>
-                                  &nbsp;&nbsp;—&nbsp;&nbsp;
-                                </Marquee>
-                              </span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019 — 20</span>
-                            </div>
-                          </motion.div>
-                        </div>
-                      </li>
-
-                      <li className={`block border-b border-black w-full pt-3 pb-1`}>
-                        <div className="overflow-hidden w-full">
-                          <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">Mindsparkle</span>
-                              <span className="block text-xl md:text-2xl w-1/2">Website Feature</span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
-                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
-                                <Link to="/isaac-j-powell" className="inline-block fake-strike--perma">Isaac J Powell</Link>
-                              </span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2019</span>
-                            </div>
-                          </motion.div>
-                        </div>
-                      </li>
-
-                      <li className={`block border-b border-black w-full pt-3 pb-1`}>
-                        <div className="overflow-hidden w-full">
-                          <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                            <div className="w-full md:w-1/2 flex flex-wrap items-center">
-                              <span className="block font-display font-light text-2xl md:text-3xl w-1/2">Heritage In Motion</span>
-                              <span className="block text-xl md:text-2xl w-1/2">Website Of The Year</span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-left pr-12 md:pr-0">
-                              <span className="text-xl md:text-2xl md:ml-auto block md:pl-24">
-                                <Link to="/v-and-a-culture-in-crisis" className="inline-block fake-strike--perma">V&amp;A Culture In Crisis</Link>
-                              </span>
-                            </div>
-                            <div className="w-1/2 md:w-1/4 md:text-right">
-                              <span className="text-xl block ml-auto">2020</span>
-                            </div>
-                          </motion.div>
-                        </div>
-                      </li>
-                    {/* )
-                  })} */}
+                <ul className="border-t border-black border-opacity-75">
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UI Award</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                          <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UX Award</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                          <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public Innovation Award</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                          <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Admire The Web</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Featured Website</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                          <Marquee velocity={0.03} className="w-full bg-red-400">
+                            <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            <Link to="/jess-bright" className="inline-block fake-strike">Jess Bright</Link>
+                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            <Link to="/jess-bright" className="inline-block fake-strike">Jess Bright</Link>
+                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            <Link to="/jess-bright" className="inline-block fake-strike">Jess Bright</Link>
+                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                          </Marquee>
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Mindsparkle</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Website Feature</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                          <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Heritage In Motion</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Website Of The Year</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                          <Link to="/v-and-a-culture-in-crisis" className="inline-block fake-strike">V&amp;A Portal</Link>
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
+                      </motion.div>
+                    </div>
+                  </li>
                 </ul>
-              </div>
+              </motion.div>
             </motion.div>
 
-            <div className="flex flex-wrap items-center">
+            <motion.div variants={fadeSlow} className="flex flex-wrap items-center">
             <div className="flex flex-wrap items-start">
               <div className="container container--content w-full flex flex-wrap">
                 <div className="w-full md:w-4/12 mb-3 md:mb-0">
@@ -263,7 +215,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
             
             <motion.div
               variants={{

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Marquee from "react-smooth-marquee"
-import NowPlaying from "./nowPlaying"
+// import NowPlaying from "./nowPlaying"
 
 const Header = ({ theme, path }) => {
   return (
@@ -16,49 +16,62 @@ const Header = ({ theme, path }) => {
             <Marquee velocity={0.04}>
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available for work in February 2021
+              Available Feb ’20
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available for work in February 2021
+              Available Feb ’20
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available for work in February 2021
+              Available Feb ’20
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available for work in February 2021
+              Available Feb ’20
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available for work in February 2021
+              Available Feb ’20
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available for work in February 2021
+              Available Feb ’20
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available for work in February 2021
+              Available Feb ’20
+              &nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available Feb ’20
+              &nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available Feb ’20
+              &nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available Feb ’20
+              &nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available Feb ’20
+              &nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available Feb ’20
+              &nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available Feb ’20
+              &nbsp;<em>—</em>&nbsp;
+              Creative Developer
+              &nbsp;<em>—</em>&nbsp;
+              Available Feb ’20
               &nbsp;<em>—</em>&nbsp;
             </Marquee>
           </div>
-          {/* <Ticker>
-            {({ index }) => (
-                <>
-                  Creative Developer Sage One Trick Motion Developer Tailwind Advocate
-                </>
-            )}
-          </Ticker> */}
-          {/* <ReactRotatingText
-            items={["Creative Developer", "Sage One Trick", "Motion Developer", "Tailwind Advocate"]}
-            pause={4000}
-            emptyPause={250}
-            cursor={false}
-            typingInterval={40}
-            deletingInterval={40}
-          /> */}
         </span>
 
         <div className="ml-auto flex flex-wrap">

@@ -73,6 +73,34 @@ h2 {
   }
 }
 
+.header-item--title {
+  @apply block text-2xl;
+
+  @screen md {
+    font-size: 3vw;
+  }
+
+  @screen lg {
+    font-size: 1.9vw;
+  }
+
+  @screen 2xl {
+    font-size: 1.7vw;
+  }
+}
+
+.header-item--small {
+  @apply block text-lg;
+
+  @screen md {
+    font-size: 2vw;
+  }
+
+  @screen lg {
+    font-size: 1.5vw;
+  }
+}
+
 .footer-item {
   @apply block text-lg;
 

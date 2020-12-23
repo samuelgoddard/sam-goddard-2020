@@ -73,17 +73,17 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
                   </div>
 
                   <div className="mb-3 md:mb-5 xl:mb-8">
-                    <span className="block font-display leading-none tracking-tight text-xl uppercase opacity-20">Email</span>
-                    <a href="mailto:hello@samgoddard.co.uk" className="inline-block fake-strike text-2xl md:text-3xl xl:text-4xl ">hello@samgoddard.co.uk</a>
+                    <span className="block block text-base mb-0 uppercase opacity-100">Email</span>
+                    <a href="mailto:hello@samgoddard.co.uk" className="inline-block fake-strike text-2xl md:text-3xl xl:text-4xl">hello@samgoddard.co.uk</a>
                   </div>
 
                   <div className="mb-3 md:mb-5 xl:mb-8">
-                    <span className="block font-display leading-none tracking-tight text-xl uppercase opacity-20">Type Set With</span>
+                    <span className="block block text-base mb-0 uppercase opacity-100">Type Set With</span>
                     <span className="block text-2xl md:text-3xl xl:text-4xl"><a className="inline-block fake-strike" href="https://pangrampangram.com/products/migra" target="_blank" rel="noopener noreferrer">Migra</a> &amp; <a className="inline-block fake-strike" href="https://pangrampangram.com/products/neue-world" target="_blank" rel="noopener noreferrer">Neue World</a></span>
                   </div>
 
                   <div className="mb-3 md:mb-5 xl:mb-8">
-                    <span className="block font-display leading-none tracking-tight text-xl uppercase opacity-20">Site Designed By</span>
+                    <span className="block block text-base mb-0 uppercase opacity-100">Site Designed By</span>
                     <a className="inline-block fake-strike text-2xl md:text-3xl xl:text-4xl " href="https://ijpowell.co.uk" target="_blank" rel="noopener noreferrer">Isaac Powell</a>
                   </div>
                 </div>
