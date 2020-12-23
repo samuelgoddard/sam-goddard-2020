@@ -63,7 +63,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
             <div className="flex flex-wrap items-start">
               <div className="container container--content w-full flex flex-wrap">
                 <div className="w-full md:w-1/2 mb-3 md:mb-0">
-                  <span className="block text-2xl">Let's Collaborate</span>
+                  <span className="block text-lg mb-3 uppercase">Let's Collaborate</span>
                 </div>
                 <div className="w-full md:w-1/2 mb-12">
                   <div className="pr-12 md:pr-12 lg:pr-24 xl:pr-32 mb-12 md:mb-16 xl:mb-20">

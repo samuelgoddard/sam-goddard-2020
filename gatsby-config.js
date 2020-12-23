@@ -15,6 +15,7 @@ module.exports = {
         duration: 1000
       }
     },
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -29,13 +30,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `sam-goddard-portfolio`,
+        short_name: `samgoddard`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        background_color: `#262525`,
+        theme_color: `#262525`,
+        display: `minimal-ui`
       },
     },
     {

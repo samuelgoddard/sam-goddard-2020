@@ -1,5 +1,6 @@
 import React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Footer = ({ backToTopButton, borderColor }) => (
   <footer className="container--footer w-full bg-trasparent">
@@ -11,17 +12,11 @@ const Footer = ({ backToTopButton, borderColor }) => (
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/samuelgoddard" className="footer-item fake-strike mr-6 md:mr-8 xl:mr-10">Github</a></li>
           <li><a href="mailto:hello@samgoddard.co.uk" className="footer-item fake-strike mr-6 md:mr-8 xl:mr-10">Email</a></li>
 
-          { backToTopButton && (
-            <li className="ml-auto">
-              <AnchorLink
-                to="#top"
-                className="footer-item fake-strike ml-6 md:ml-8 xl:ml-10"
-                title="Scroll back to the top of the page"
-              >
-                <span className="hidden md:inline">Back to&nbsp;</span>Top
-              </AnchorLink>
-            </li>
-          )}
+          <li className="ml-auto">
+            <button onClick={() => scrollTo('#top')} className="footer-item fake-strike ml-6 md:ml-8 xl:ml-10" title="Scroll back to the top of the page">
+              <span className="hidden md:inline">Back to&nbsp;</span>Top
+            </button>
+          </li>
         </ul>
       </nav>
     </div>

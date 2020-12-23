@@ -7,6 +7,7 @@ const SEO = ({ pathname, titleOverride, descriptionOverride, pathnameOverride, i
     site: {
       siteMetadata: { siteUrl },
     },
+    allFile,
     datoCmsSite: {
       globalSeo: { 
         siteName,
@@ -26,6 +27,19 @@ const SEO = ({ pathname, titleOverride, descriptionOverride, pathnameOverride, i
       site {
         siteMetadata {
           siteUrl
+        }
+      }
+      allFile(
+        limit: 1
+        filter: {
+          name: { eq: "favicon" }
+          ext: { eq: ".svg" }
+          sourceInstanceName: { eq: "images" }
+          relativeDirectory: { eq: "" }
+        }
+      ){
+        nodes {
+          publicURL
         }
       }
       datoCmsSite {
@@ -66,6 +80,15 @@ const SEO = ({ pathname, titleOverride, descriptionOverride, pathnameOverride, i
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={twitterAccount} />
+
+      FAVICON: { allFile.nodes[0].publicUrl }
+
+      <link
+        rel="icon"
+        href={allFile.nodes[0].publicURL}
+        type="image/svg+xml"
+        sizes="any"
+      />
 
       { noIndex && (
         <meta name="robots" content="noindex" />

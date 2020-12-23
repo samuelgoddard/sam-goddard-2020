@@ -158,17 +158,17 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
                           <Marquee velocity={0.03} className="w-full bg-red-400">
                             <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
-                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
                             <Link to="/jess-bright" className="inline-block fake-strike">Jess Bright</Link>
-                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
                             <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
-                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
                             <Link to="/jess-bright" className="inline-block fake-strike">Jess Bright</Link>
-                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
                             <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
-                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
                             <Link to="/jess-bright" className="inline-block fake-strike">Jess Bright</Link>
-                            &nbsp;&nbsp;—&nbsp;&nbsp;
+                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
                           </Marquee>
                         </span>
                         <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
@@ -207,7 +207,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
             <div className="flex flex-wrap items-start">
               <div className="container container--content w-full flex flex-wrap">
                 <div className="w-full md:w-4/12 mb-3 md:mb-0">
-                  <span className="block text-2xl md:mb-8">About Me</span>
+                  <span className="block text-lg mb-3 uppercase">About Me</span>
                 </div>
                 <div className="w-full md:w-7/12 mb-12">
                   <div className="w-10/12 md:w-8/12 xl:w-8/12 2xl:w-7/12 collab-text font-light" dangerouslySetInnerHTML={{ __html: datoCmsAbout.bio }}>

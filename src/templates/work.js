@@ -115,13 +115,13 @@ const WorkPage = ({ data: { work }, location}) => {
             <span className="block text-base mb-2 uppercase">Tech Stack</span>
             <ul className="border-t border-white border-opacity-25 mb-8 xl:mb-10">
               { work.stack.map((block) => (
-                <li key={block.id} className="block border-b border-white border-opacity-25 w-full pt-3 pb-1">
+                <li key={block.id} className="block border-b border-white border-opacity-25 w-full pt-3 pb-2">
                   {
                     block.model.apiKey === 'text' &&
                       <div className="overflow-hidden w-full">
                         <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                          <span className="block font-display font-light leading-none tracking-mini header-item">{ block.text }</span>
-                          <span className="block text-right ml-auto text-lg">{ block.metaText }</span>
+                          <span className="block font-display font-light leading-none tracking-mini header-item header-item--title">{ block.text }</span>
+                          <span className="block text-right ml-auto header-item header-item--small">{ block.metaText }</span>
                         </motion.div>
                       </div>
                   }
@@ -132,13 +132,13 @@ const WorkPage = ({ data: { work }, location}) => {
             <motion.span variants={fade} className="block text-base mb-2 uppercase">With Thanks To</motion.span>
             <ul className="border-t border-white border-opacity-25">
               { work.thanksTo.map((block) => (
-                <li key={block.id} className="block border-b border-white border-opacity-25 w-full pt-3 pb-1">
+                <li key={block.id} className="block border-b border-white border-opacity-25 w-full pt-3 pb-2">
                   {
                     block.model.apiKey === 'text' &&
                       <div className="overflow-hidden w-full">
                         <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                          <span className="block font-display font-light leading-none tracking-mini header-item">{ block.text }</span>
-                          <span className="block text-right ml-auto text-lg">{ block.metaText }</span>
+                          <span className="block font-display font-light leading-none tracking-mini header-item--title">{ block.text }</span>
+                          <span className="block text-right ml-auto header-item header-item--small">{ block.metaText }</span>
                         </motion.div>
                       </div>
                   }
@@ -151,7 +151,7 @@ const WorkPage = ({ data: { work }, location}) => {
             <div className="flex flex-wrap items-start">
               <div className="container container--content w-full flex flex-wrap">
                 <div className="w-full md:w-4/12 mb-3 md:mb-0">
-                  <span className="block text-2xl md:mb-8">About The Project</span>
+                  <span className="block text-lg mb-3 uppercase md:mb-8">About The Project</span>
                   
                   <div className="hidden md:block">
                     {/* <motion.span variants={fade} className="block text-base mb-2 uppercase">Meta</motion.span>
