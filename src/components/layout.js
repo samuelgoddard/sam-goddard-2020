@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { AnimatePresence, motion } from "framer-motion"
-import { fade, revealInOut, revealInOutIn } from "../helpers/transitionHelper"
+import { fade, revealInOut, revealInOutInSlow } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 import CountUp from "react-countup"
 import Header from "./header"
@@ -102,7 +102,7 @@ class Layout extends React.Component {
                       className="h-screen w-full z-40 bg-black flex flex-wrap items-center justify-center text-white"
                     >
                       <span className="flex overflow-hidden relative z-40">
-                        <motion.span variants={revealInOutIn} className="flex">
+                        <motion.span variants={revealInOutInSlow} className="flex">
                           <span className="header-item--large">
                             <span className="block">Sam Goddard </span>
                           </span>
