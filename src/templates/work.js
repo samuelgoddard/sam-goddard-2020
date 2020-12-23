@@ -250,24 +250,24 @@ export const query = graphql`
       inProgress
       image {
         fluid(
-          maxWidth: 1400,
-          imgixParams: {w: "1400", h: "950", fit: "crop" }) {
+          maxWidth: 1000,
+          imgixParams: {w: "1000", h: "600", fit: "crop" }) {
           ...GatsbyDatoCmsFluid
         }
         alt
       }
       desktopImage {
         fluid(
-          maxWidth: 1400,
-          imgixParams: {w: "1400", h: "950", fit: "crop" }) {
+          maxWidth: 1000,
+          imgixParams: {w: "1000", h: "600", fit: "crop" }) {
           ...GatsbyDatoCmsFluid
         }
         alt
       }
       mobileImage {
         fluid(
-          maxWidth: 800,
-          imgixParams: {w: "800", h: "1300", fit: "crop" }) {
+          maxWidth: 600,
+          imgixParams: {w: "600", h: "1000", fit: "crop" }) {
           ...GatsbyDatoCmsFluid
         }
         alt

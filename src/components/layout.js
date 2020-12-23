@@ -52,8 +52,8 @@ class Layout extends React.Component {
                   year
                   image {
                     fluid(
-                      maxWidth: 1200,
-                      imgixParams: {w: "1200", h: "800", fit: "crop" }) {
+                      maxWidth: 900,
+                      imgixParams: {w: "900", h: "600", fit: "crop" }) {
                       ...GatsbyDatoCmsFluid
                     }
                     alt
