@@ -248,10 +248,18 @@ export const query = graphql`
       }
       year
       inProgress
+      image {
+        fluid(
+          maxWidth: 1400,
+          imgixParams: {w: "1400", h: "950", fit: "crop" }) {
+          ...GatsbyDatoCmsFluid
+        }
+        alt
+      }
       desktopImage {
         fluid(
-          maxWidth: 1200,
-          imgixParams: {w: "1200", h: "800", fit: "crop" }) {
+          maxWidth: 1400,
+          imgixParams: {w: "1400", h: "950", fit: "crop" }) {
           ...GatsbyDatoCmsFluid
         }
         alt
