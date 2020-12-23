@@ -36,7 +36,7 @@ module.exports = {
         background_color: `#262525`,
         theme_color: `#262525`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/favicon.png`,
         include_favicon: false, // exclude favicons
       },
     },
