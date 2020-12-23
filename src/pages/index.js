@@ -5,16 +5,15 @@ import { motion } from "framer-motion"
 import { graphql, Link } from "gatsby"
 import { fade, revealInOut, revealInOutIn } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
-import CountUp from "react-countup"
 
-const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
+const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}) => {
   return (
     <>
       <SEO
-        titleOverride={datoCmsHome.metaTags && datoCmsHome.metaTags.title ? datoCmsHome.metaTags.title : datoCmsHome.title }
-        descriptionOverride={datoCmsHome.metaTags && datoCmsHome.metaTags.description ? datoCmsHome.metaTags.description : null }
-        pathnameOverride={location.pathname}
-        imageOverride={datoCmsHome.metaTags && datoCmsHome.metaTags.image ? datoCmsHome.metaTags.image.url : null }
+        titleOverride={ datoCmsHome.metaTags && datoCmsHome.metaTags.title ? datoCmsHome.metaTags.title : datoCmsHome.title }
+        descriptionOverride={ datoCmsHome.metaTags && datoCmsHome.metaTags.description ? datoCmsHome.metaTags.description : null }
+        pathnameOverride={ location.pathname}
+        imageOverride={ datoCmsHome.metaTags && datoCmsHome.metaTags.image ? datoCmsHome.metaTags.image.url : null }
       />
 
       <motion.section
@@ -26,7 +25,10 @@ const IndexPage = ({ data: { datoCmsHome, work }, location}) => {
       >
         <motion.div variants={fade}>
           <motion.div variants={{
-            enter: { transition: { staggerChildren: 0.02 }}
+            enter: { transition: { 
+              staggerChildren: 0.02,
+              delayChildren: childAnimationDelay
+            }}
           }}>
             {/* <div className="header-mask" data-scroll-sticky data-scroll data-scroll-target="#___gatsby"></div> */}
             <div className="container container--content">

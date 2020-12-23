@@ -58,7 +58,7 @@ h2 {
 }
 
 .header-item--large {
-  @apply block text-xl;
+  @apply block text-3xl;
 
   @screen md {
     font-size: 3vw;
@@ -431,6 +431,69 @@ button {
     left: 0;
     width: 100%;
     height: 1px;
+  }
+}
+
+.intro-image-plane--1 {
+  width: 50vw;
+  height: 33vh;
+
+  @screen md {
+    width: 30vw;
+    height: 45vh; 
+  }
+}
+
+.intro-image-plane--2 {
+  width: 65vw;
+  height: 55vh;
+
+  @screen md {
+    width: 50vw;
+    height: 75vh;
+  }
+}
+
+.intro-image-plane--1, .intro-image-plane--2 {
+  .intro-image-plane__img-2 {
+    animation-name: revealIntroImage;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.3s;
+  }
+}
+
+/* .intro-image-plane__img-1, .intro-image-plane__img-2 {
+  transform: scale(3);
+} */
+
+.intro-image-plane--2 {
+  .intro-image-plane__img-2 {
+    animation-delay: 2.2s;
+  }
+}
+
+.image-scaler {
+  animation-name: revealIntroImageScale;
+  animation-duration: 4.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes revealIntroImage {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes revealIntroImageScale {
+  from {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
   }
 }
 

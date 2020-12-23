@@ -7,7 +7,7 @@ import { graphql, Link } from "gatsby"
 import { fadeSlow, fade, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 
-const AboutPage = ({ data: { datoCmsAbout }, location}) => {
+const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => {
   return (
     <>
       <SEO
@@ -31,7 +31,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location}) => {
                 <motion.div
                   className="content w-full about-text relative z-10 pb-32 md:pb-32 xl:pb-48"
                   variants={{
-                    enter: { transition: { staggerChildren: 0.03 }}
+                    enter: { transition: { staggerChildren: 0.03, delayChildren: childAnimationDelay }}
                   }}
                 >
                   <span className="hidden md:block">
