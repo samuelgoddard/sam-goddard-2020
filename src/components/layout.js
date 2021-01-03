@@ -130,7 +130,7 @@ class Layout extends React.Component {
                         </div>
                       </div>
 
-                      <div className="absolute bottom-0 right-0 pr-8 md:pr-12 pb-8 md:pb-12 intro-image-plane intro-image-plane--2 ">
+                      <div className="absolute bottom-0 right-0 pr-8 md:pr-12 pb-24 md:pb-12 intro-image-plane intro-image-plane--2 ">
                         <div className="relative w-full h-full overflow-hidden">
                           <motion.div 
                             animate={{ y: "-100%" }}
