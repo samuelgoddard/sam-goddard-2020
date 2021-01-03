@@ -109,7 +109,11 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
                             <div className="overflow-hidden w-full">
                               <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                                 <span className="block font-display font-light leading-none tracking-mini header-item">{ block.text }</span>
-                                <span className="hidden xl:block text-right ml-auto text-lg">{ block.metaText }</span>
+                                { block.url ? (
+                                  <a href={ block.url } target="_blank" rel="noreferrer noopener" className="hidden xl:block text-right ml-auto text-lg fake-strike">{ block.metaText }</a>
+                                ) : (
+                                  <span className="hidden xl:block text-right ml-auto text-lg">{ block.metaText }</span>
+                                )}
                               </motion.div>
                             </div>
                         }
@@ -132,7 +136,7 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
                   </span>
                 </a>
               ) : (
-                <span className="mr-8 md:mb-5 site-link block mb-6">
+                <span className="mr-8 md:mb-5 site-link block mb-12">
                   Launching Soon
                 </span>
               )}
@@ -214,7 +218,7 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
                     </div>
                   </div>
                   <div className="w-full md:w-7/12 mb-12">
-                    <div className="w-10/12 md:w-8/12 xl:w-7/12 2xl:w-1/2 collab-text font-light" dangerouslySetInnerHTML={{ __html: work.overview }}>
+                    <div className="w-10/12 md:w-8/12 xl:w-1/2 2xl:w-6/12 collab-text font-light 2xl:pr-12" dangerouslySetInnerHTML={{ __html: work.overview }}>
                     </div>
                   </div>
                 </div>
@@ -250,16 +254,16 @@ export const query = graphql`
       inProgress
       image {
         fluid(
-          maxWidth: 1000,
-          imgixParams: {w: "1000", h: "600", fit: "crop" }) {
+          maxWidth: 900,
+          imgixParams: {w: "900", h: "600", fit: "crop" }) {
           ...GatsbyDatoCmsFluid
         }
         alt
       }
       desktopImage {
         fluid(
-          maxWidth: 1000,
-          imgixParams: {w: "1000", h: "600", fit: "crop" }) {
+          maxWidth: 900,
+          imgixParams: {w: "900", h: "730", fit: "crop" }) {
           ...GatsbyDatoCmsFluid
         }
         alt
@@ -294,6 +298,7 @@ export const query = graphql`
           model { apiKey }
           text
           metaText
+          url
         }
       }
       overview

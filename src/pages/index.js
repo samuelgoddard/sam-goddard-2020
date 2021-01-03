@@ -36,7 +36,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}
                 {work.edges.map(({ node }, i) => {
                   return (
                     <li key={i} className={`work-item-wrapper block border-opacity-25 border-b border-white`}>
-                      <Link className="work-item block relative group" to={ `/${node.slug}` }>
+                      <Link className="work-item block relative group outline-none focus:outline-none hover:outline-none" to={ `/${node.slug}` }>
                         <div className="overflow-hidden">
                           <div className="work-item__inner">
                             <motion.div variants={revealInOut} className="flex flex-wrap w-full">

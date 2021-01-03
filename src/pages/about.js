@@ -210,7 +210,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                   <span className="block text-lg mb-3 uppercase">About Me</span>
                 </div>
                 <div className="w-full md:w-7/12 mb-12">
-                  <div className="w-10/12 md:w-8/12 xl:w-8/12 2xl:w-7/12 collab-text font-light" dangerouslySetInnerHTML={{ __html: datoCmsAbout.bio }}>
+                  <div className="w-10/12 md:w-8/12 xl:w-7/12 2xl:w-6/12 collab-text xl:pr-8 font-light collab-text" dangerouslySetInnerHTML={{ __html: datoCmsAbout.bio }}>
                   </div>
                 </div>
               </div>
