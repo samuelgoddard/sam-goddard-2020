@@ -2,9 +2,9 @@ require("dotenv").config({ path: `.env` })
 
 module.exports = {
   siteMetadata: {
-    title: `Sam Goddard Portfolio`,
-    siteUrl: `https://sam-goddard.vercel.app`,
-    description: `Sam Goddard Portfolio.`,
+    title: `Sam Goddard Development`,
+    siteUrl: `https://samgoddard.co.uk`,
+    description: `Sam Goddard Development.`,
     author: `@samuelgoddard`,
   },
   plugins: [
