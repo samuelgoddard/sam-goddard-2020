@@ -203,7 +203,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
               </motion.div>
             </motion.div>
 
-            <motion.div variants={fadeSlow} className="flex flex-wrap items-center">
+            <motion.div variants={fadeSlow} className="flex flex-wrap items-center relative z-30">
             <div className="flex flex-wrap items-start">
               <div className="container container--content w-full flex flex-wrap">
                 <div className="w-full md:w-4/12 mb-3 md:mb-0">

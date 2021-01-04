@@ -22,7 +22,7 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
         initial="initial"
         animate="enter"
         exit="exit"
-        className="text-white"
+        className="text-white relative z-30"
       >
         <motion.div
           variants={{
@@ -32,7 +32,7 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
           <motion.div variants={fade}>
             <Div100vh className="container container--content-about flex flex-wrap pb-2 md:pb-4 relative">
               { !work.inProgress && work.url ? (
-                <a href={ work.url } target="_blank" rel="noopener noreferrer" className="hidden md:block md:fixed bottom-0 right-0 mr-8 md:mb-8 site-link z-0 fake-strike overflow-hidden">
+                <a href={ work.url } target="_blank" rel="noopener noreferrer" className="hidden md:block md:fixed bottom-0 right-0 mr-8 md:mb-8 site-link z-40 fake-strike overflow-hidden pl-1">
                   <motion.div variants={revealInOut} className="hidden md:flex items-center">
                     <span className="flex h-3 w-3 relative -mt-0">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-50"></span>
@@ -98,7 +98,6 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
 
                   <motion.span variants={fade} className="block text-base mb-2 uppercase">With Thanks To</motion.span>
                   
-
                   <ul
                     className="border-t border-white border-opacity-25"
                   >
@@ -176,7 +175,7 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
               </ul>
             </div>
 
-            <div className="flex flex-wrap items-center">
+            <div className="flex flex-wrap items-center z-30 relative">
               <div className="flex flex-wrap items-start">
                 <div className="container container--content w-full flex flex-wrap">
                   <div className="w-full md:w-4/12 mb-3 md:mb-0">

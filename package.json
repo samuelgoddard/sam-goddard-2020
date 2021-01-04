@@ -32,6 +32,7 @@
     "react-rotating-text": "^1.4.1",
     "react-smooth-marquee": "^1.0.0",
     "react-ticker": "^1.2.2",
+    "scroll-to-element": "^2.0.3",
     "splitting": "^1.0.6"
   },
   "devDependencies": {

@@ -61,8 +61,8 @@ const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}
             </div>
           </motion.div>
           
-          <div className="flex flex-wrap items-center" id="collaborate">
-            <div className="flex flex-wrap items-start">
+          <div className="flex flex-wrap items-center relative z-30">
+            <div className="flex flex-wrap items-start" id="collaborate">
               <div className="container container--content w-full flex flex-wrap">
                 <div className="w-full md:w-1/2 mb-3 md:mb-0">
                   <span className="block text-lg mb-3 uppercase">Let's Collaborate</span>
