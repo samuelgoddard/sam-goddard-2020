@@ -122,12 +122,13 @@ h2 {
     width: 2.7vw;
   }
 }
-
-.work-area {
-  transition: opacity .5s ease-in-out;
-  &:hover {
-    .work-item {
-      @apply opacity-25;
+@screen md {
+  .work-area {
+    transition: opacity .5s ease-in-out;
+    &:hover {
+      .work-item {
+        @apply opacity-25;
+      }
     }
   }
 }
