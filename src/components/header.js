@@ -81,11 +81,11 @@ const Header = ({ theme, path }) => {
             </ul>
           </nav>
 
-          <AnchorLink to={`/#collaborate`} title="Navigate to Collaborate Section" className="header-item fake-strike ml-5 md:ml-24"></AnchorLink>
+          {/* <AnchorLink to={`/#collaborate`} title="Navigate to Collaborate Section" className="header-item fake-strike ml-5 md:ml-24"></AnchorLink> */}
 
-          {/* <a href="mailto:hello@samgoddard.co.uk"
+          <a href="mailto:hello@samgoddard.co.uk"
             className="header-item fake-strike ml-5 md:ml-24"><span className="hidden md:inline">Let's </span>Collab<span className="hidden sm:inline">orate</span>
-          </a> */}
+          </a>
         </div>
       </div>
     </header>
