@@ -166,7 +166,13 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
                         <div className="overflow-hidden w-full">
                           <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                             <span className="block font-display font-light leading-none tracking-mini header-item--title">{ block.text }</span>
-                            <span className="block text-right ml-auto header-item header-item--small">{ block.metaText }</span>
+
+                            { block.url ? (
+                              <a href={ block.url } target="_blank" rel="noreferrer noopener" className="block text-right ml-auto header-item header-item--small fake-strike">{ block.metaText }</a>
+                            ) : (
+                              <span className="block text-right ml-auto header-item header-item--small">{ block.metaText }</span>
+                            )}
+                            
                           </motion.div>
                         </div>
                     }
