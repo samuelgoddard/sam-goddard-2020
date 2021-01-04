@@ -133,18 +133,20 @@ h2 {
   }
 }
 
-.work-item {
-  transition: opacity .5s ease-in-out;
+@screen md {
+  .work-item {
+    transition: opacity .5s ease-in-out;
 
-  &:hover {
-    @apply opacity-100 !important;
+    &:hover {
+      @apply opacity-100 !important;
 
-    .work-item__inner {
-      @apply pl-5;
-    }
-    
-    .work-item__image {
-      opacity: 0.3;
+      .work-item__inner {
+        @apply pl-5;
+      }
+      
+      .work-item__image {
+        opacity: 0.3;
+      }
     }
   }
 }
