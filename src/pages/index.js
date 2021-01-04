@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from "framer-motion"
 import { graphql, Link } from "gatsby"
-import { fade, revealInOut, revealInOutIn } from "../helpers/transitionHelper"
+import { fadeSlow, revealInOut, revealInOutIn } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 
 const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}) => {
@@ -23,7 +23,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}
         exit="exit"
         className="text-white"
       >
-        <motion.div variants={fade}>
+        <motion.div variants={fadeSlow}>
           <motion.div variants={{
             enter: { transition: { 
               staggerChildren: 0.02,

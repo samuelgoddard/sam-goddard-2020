@@ -31,7 +31,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                 <motion.div
                   className="content w-full about-text relative z-10 pb-32 md:pb-32 xl:pb-48"
                   variants={{
-                    enter: { transition: { staggerChildren: 0.03, delayChildren: childAnimationDelay }}
+                    enter: { transition: { staggerChildren: 0.02, delayChildren: childAnimationDelay }}
                   }}
                 >
                   <span className="hidden md:block">
