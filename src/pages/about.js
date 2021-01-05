@@ -94,13 +94,13 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                     enter: { transition: { delayChildren: 0.3 }}
                   }}
                 > 
-                  <div className="overflow-hidden">
-                    <motion.div variants={fadeSlow}>
-                      <div className="w-full md:w-7/12 xl:w-1/2 absolute z-0 bottom-0 right-0 pl-8 opacity-75 overflow-hidden">
+                  <motion.div variants={fadeSlow}>
+                    <div className="w-full md:w-7/12 xl:w-1/2 absolute z-0 bottom-0 right-0 pl-8 opacity-75">
+                      <div className="relative overflow-hidden">
                         <Img fluid={ datoCmsAbout.image.fluid } className="w-full mb-0 pb-0  h-full object-cover object-center z-10 block image-scaler--fast" />
                       </div>
-                    </motion.div>
-                  </div>
+                    </div>
+                  </motion.div>
                 </motion.div>
               </div>
             </div>
