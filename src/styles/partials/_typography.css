@@ -125,7 +125,7 @@ h2 {
 @screen md {
   .work-area {
     transition: opacity .5s ease-in-out;
-    &:hover {
+    &:hover, &:focus {
       .work-item {
         @apply opacity-25;
       }
@@ -133,11 +133,18 @@ h2 {
   }
 }
 
+.work-item {
+  &:hover, &:focus {
+    outline: none!important;
+    border: none!important;
+  }
+}
+
 @screen md {
   .work-item {
     transition: opacity .5s ease-in-out;
 
-    &:hover {
+    &:hover, &:focus {
       @apply opacity-100 !important;
 
       .work-item__inner {
