@@ -93,12 +93,14 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                   variants={{
                     enter: { transition: { delayChildren: 0.3 }}
                   }}
-                >
-                  <motion.div variants={fadeSlow}>
-                    <div className="w-full md:w-7/12 xl:w-1/2 absolute z-0 bottom-0 right-0 pl-8 opacity-75">
-                      <Img fluid={ datoCmsAbout.image.fluid } className="w-full mb-0 pb-0" />
-                    </div>
-                  </motion.div>
+                > 
+                  <div className="overflow-hidden">
+                    <motion.div variants={fadeSlow}>
+                      <div className="w-full md:w-7/12 xl:w-1/2 absolute z-0 bottom-0 right-0 pl-8 opacity-75 overflow-hidden">
+                        <Img fluid={ datoCmsAbout.image.fluid } className="w-full mb-0 pb-0  h-full object-cover object-center z-10 block image-scaler--fast" />
+                      </div>
+                    </motion.div>
+                  </div>
                 </motion.div>
               </div>
             </div>
@@ -202,19 +204,25 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                 </ul>
               </motion.div>
             </motion.div>
-
-            <motion.div variants={fadeSlow} className="flex flex-wrap items-center relative z-30">
-            <div className="flex flex-wrap items-start">
-              <div className="container container--content w-full flex flex-wrap">
-                <div className="w-full md:w-4/12 mb-3 md:mb-0">
-                  <span className="block text-lg mb-3 uppercase">About Me</span>
-                </div>
-                <div className="w-full md:w-7/12 mb-12">
-                  <div className="w-10/12 md:w-8/12 xl:w-7/12 2xl:w-6/12 collab-text xl:pr-8 font-light collab-text" dangerouslySetInnerHTML={{ __html: datoCmsAbout.bio }}>
+            
+            <motion.div
+              variants={{
+                enter: { transition: { delayChildren: childAnimationDelay }}
+              }}
+            >
+              <motion.div variants={fadeSlow} className="flex flex-wrap items-center relative z-30">
+              <div className="flex flex-wrap items-start">
+                <div className="container container--content w-full flex flex-wrap">
+                  <div className="w-full md:w-4/12 mb-3 md:mb-0">
+                    <span className="block text-lg mb-3 uppercase">About Me</span>
+                  </div>
+                  <div className="w-full md:w-8/12 mb-12">
+                    <div className="w-10/12 md:w-8/12 xl:w-7/12 2xl:w-6/12 collab-text xl:pr-8 font-light collab-text" dangerouslySetInnerHTML={{ __html: datoCmsAbout.bio }}>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
             
             <motion.div

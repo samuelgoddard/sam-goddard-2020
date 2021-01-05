@@ -222,7 +222,7 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
                       )}
                     </div>
                   </div>
-                  <div className="w-full md:w-7/12 mb-12">
+                  <div className="w-full md:w-8/12 mb-12">
                     <div className="w-10/12 md:w-8/12 xl:w-1/2 2xl:w-6/12 collab-text font-light 2xl:pr-12" dangerouslySetInnerHTML={{ __html: work.overview }}>
                     </div>
                   </div>

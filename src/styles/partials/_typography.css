@@ -478,7 +478,7 @@ button {
 
 .image-scaler {
   animation-name: revealIntroImageScale;
-  animation-duration: 3.25s;
+  animation-duration: 3.15s;
   animation-fill-mode: forwards;
   transform-origin: center;
 }

@@ -81,8 +81,6 @@ const SEO = ({ pathname, titleOverride, descriptionOverride, pathnameOverride, i
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={twitterAccount} />
 
-      FAVICON: { allFile.nodes[0].publicUrl }
-
       <link
         rel="icon"
         href={allFile.nodes[0].publicURL}
