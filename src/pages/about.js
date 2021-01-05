@@ -111,7 +111,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                 enter: { transition: { staggerChildren: 0.02 }}
               }}
             >
-              <motion.div variants={fadeSlow} className="container container--content">
+              <motion.div variants={fadeSlow} className="container container--content relative z-30">
 
                 <span className="block text-base mb-3 uppercase">Features &amp; Awards</span>
 
