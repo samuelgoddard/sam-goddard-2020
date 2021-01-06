@@ -4,7 +4,7 @@ import Footer from "../components/footer"
 import { motion } from "framer-motion"
 import { graphql, Link } from "gatsby"
 import { fadeSlow, revealInOut } from "../helpers/transitionHelper"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}) => {
   return (
@@ -50,7 +50,8 @@ const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}
                         </div>
                         { node.image ? (
                           <div className="work-item__image">
-                            <Img loading="eager" fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
+                            <img src={ node.image.fluid.src } alt={ node.title } className="w-full mb-0 pb-0" />
+                            {/* <Img loading="eager" fluid={ node.image.fluid } className="w-full mb-0 pb-0" /> */}
                           </div>
                         ) : (<></>)}
                       </Link>
