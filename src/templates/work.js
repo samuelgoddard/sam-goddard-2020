@@ -88,7 +88,7 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
                             <div className="overflow-hidden w-full">
                               <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                                 <span className="block font-display font-light leading-none tracking-mini header-item">{ block.text }</span>
-                                <span className="hidden xl:block text-right ml-auto text-lg">{ block.metaText }</span>
+                                <span className="hidden md:block text-right ml-auto text-lg">{ block.metaText }</span>
                               </motion.div>
                             </div>
                         }
@@ -109,9 +109,9 @@ const WorkPage = ({ data: { work }, location, childAnimationDelay}) => {
                               <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                                 <span className="block font-display font-light leading-none tracking-mini header-item">{ block.text }</span>
                                 { block.url ? (
-                                  <a href={ block.url } target="_blank" rel="noreferrer noopener" className="hidden xl:block text-right ml-auto text-lg fake-strike">{ block.metaText }</a>
+                                  <a href={ block.url } target="_blank" rel="noreferrer noopener" className="hidden md:block text-right ml-auto text-lg fake-strike">{ block.metaText }</a>
                                 ) : (
-                                  <span className="hidden xl:block text-right ml-auto text-lg">{ block.metaText }</span>
+                                  <span className="hidden md:block text-right ml-auto text-lg">{ block.metaText }</span>
                                 )}
                               </motion.div>
                             </div>
