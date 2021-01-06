@@ -16,12 +16,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-preact`,
-    {
-      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
-      options: {
-        devMode: true,
-      },
-    },
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,

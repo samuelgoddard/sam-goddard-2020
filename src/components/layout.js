@@ -120,11 +120,13 @@ class Layout extends React.Component {
                           ></motion.div>
 
                           <div className="absolute top-0 left-0 right-0 bottom-0  z-20 intro-image-plane__img-1 bg-black">
-                            <Img loading="eager" fluid={ data.work.edges[0].node.image.fluid } className="opacity-25 w-full h-full object-cover object-center image-scaler" />
+                            <img src={ data.work.edges[0].node.image.fluid.src } alt="Project" className="opacity-25 w-full h-full object-cover object-center image-scaler" />
+                            {/* <Img loading="eager" fluid={ data.work.edges[0].node.image.fluid } className="opacity-25 w-full h-full object-cover object-center image-scaler" /> */}
                           </div>
 
                           <div div className="absolute top-0 left-0 right-0 bottom-0  z-20 intro-image-plane__img-2 bg-black">
-                            <Img loading="eager" fluid={ data.work.edges[8].node.image.fluid } className="opacity-25 w-full h-full object-cover object-center image-scaler" />
+                            <img src={ data.work.edges[8].node.image.fluid.src } alt="Project" className="opacity-25 w-full h-full object-cover object-center image-scaler" />
+                            {/* <Img loading="eager" fluid={ data.work.edges[8].node.image.fluid } className="opacity-25 w-full h-full object-cover object-center image-scaler" /> */}
                           </div>
                         </div>
                       </div>
@@ -138,11 +140,13 @@ class Layout extends React.Component {
                           ></motion.div>
 
                           <div className="absolute top-0 left-0 right-0 bottom-0  z-20 intro-image-plane__img-1 bg-black transform">
-                            <Img loading="eager" fluid={ data.work.edges[9].node.image.fluid } className="opacity-25 w-full h-full object-cover object-center image-scaler" />
+                            <img src={ data.work.edges[9].node.image.fluid.src } alt="Project" className="opacity-25 w-full h-full object-cover object-center image-scaler" />
+                            {/* <Img loading="eager" fluid={ data.work.edges[9].node.image.fluid } className="opacity-25 w-full h-full object-cover object-center image-scaler" /> */}
                           </div>
 
                           <div className="absolute top-0 left-0 right-0 bottom-0  z-20 intro-image-plane__img-2 bg-black transform">
-                            <Img loading="eager" fluid={ data.work.edges[5].node.image.fluid } className="opacity-25 w-full h-full object-cover object-center image-scaler" />
+                            <img src={ data.work.edges[5].node.image.fluid.src } alt="Project" className="opacity-25 w-full h-full object-cover object-center image-scaler" />
+                            {/* <Img loading="eager" fluid={ data.work.edges[5].node.image.fluid } className="opacity-25 w-full h-full object-cover object-center image-scaler" /> */}
                           </div>
                         </div>
                       </div>
