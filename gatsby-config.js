@@ -16,7 +16,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-preact`,
-    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
     {
