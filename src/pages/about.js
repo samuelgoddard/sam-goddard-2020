@@ -4,7 +4,7 @@ import Footer from "../components/footer"
 import { motion } from 'framer-motion'
 import Marquee from "react-smooth-marquee"
 import { graphql, Link } from "gatsby"
-import { fadeSlow, fade, revealInOut } from "../helpers/transitionHelper"
+import { fadeSlow, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 
 const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => {

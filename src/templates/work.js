@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from "framer-motion"
 import { graphql, Link } from "gatsby"
-import { fade, revealInOut, revealInOutDelayed, fadeSlow } from "../helpers/transitionHelper"
+import { fade, revealInOut, fadeSlow } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 import Div100vh from "react-div-100vh"
 

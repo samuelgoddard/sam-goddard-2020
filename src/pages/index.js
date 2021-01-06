@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from "framer-motion"
 import { graphql, Link } from "gatsby"
-import { fadeSlow, revealInOut, revealInOutIn } from "../helpers/transitionHelper"
+import { fadeSlow, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 
 const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}) => {

@@ -1,8 +1,7 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { AnimatePresence, motion } from "framer-motion"
-import { fade, revealInOut, revealInOutInSlow } from "../helpers/transitionHelper"
+import { revealInOutInSlow } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 import CountUp from "react-countup"
 import Header from "./header"
@@ -165,10 +164,6 @@ class Layout extends React.Component {
       />
     )
   }
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

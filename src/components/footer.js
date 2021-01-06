@@ -1,8 +1,7 @@
 import React from "react"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-const Footer = ({ backToTopButton, borderColor }) => (
+const Footer = ({ borderColor }) => (
   <footer className="container--footer w-full bg-trasparent">
     <div className={`border-t ${ borderColor } border-opacity-75 pt-3 md:pt-4`}>
       <nav>
