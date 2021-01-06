@@ -50,7 +50,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}
                         </div>
                         { node.image ? (
                           <div className="work-item__image">
-                            <Img fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
+                            <Img loading="eager" fluid={ node.image.fluid } className="w-full mb-0 pb-0" />
                           </div>
                         ) : (<></>)}
                       </Link>
