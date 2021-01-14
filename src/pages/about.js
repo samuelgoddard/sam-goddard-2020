@@ -192,6 +192,17 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                   <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
                     <div className="overflow-hidden w-full">
                       <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Mobile Excellence</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Typewolf</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Site Of The Day</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
