@@ -2,8 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from 'framer-motion'
-import Marquee from "react-smooth-marquee"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { fadeSlow, revealInOut } from "../helpers/transitionHelper"
 import Img from "gatsby-image"
 
@@ -122,9 +121,9 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UI Award</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                          (2 times)
                         </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
                       </motion.div>
                     </div>
                   </li>
@@ -134,9 +133,9 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UX Award</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                          (2 times)
                         </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
                       </motion.div>
                     </div>
                   </li>
@@ -144,11 +143,14 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                     <div className="overflow-hidden w-full">
                       <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
+
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public Innovation Award</span>
+                        
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                          (2 times)
                         </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
+
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
                       </motion.div>
                     </div>
                   </li>
@@ -158,20 +160,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Admire The Web</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Featured Website</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          <Marquee velocity={0.03} className="w-full bg-red-400">
-                            <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
-                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
-                            <Link to="/jess-bright" className="inline-block fake-strike">Jess Bright</Link>
-                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
-                            <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
-                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
-                            <Link to="/jess-bright" className="inline-block fake-strike">Jess Bright</Link>
-                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
-                            <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
-                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
-                            <Link to="/jess-bright" className="inline-block fake-strike">Jess Bright</Link>
-                            &nbsp;&nbsp;<em>&amp;</em>&nbsp;&nbsp;
-                          </Marquee>
+                          (3 times)
                         </span>
                         <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
                       </motion.div>
@@ -183,9 +172,42 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Mindsparkle</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Website Feature</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          <Link to="/isaac-j-powell" className="inline-block fake-strike">Isaac J Powell</Link>
+                          (2 times)
                         </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Honors</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Typewolf</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Site Of The Day</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Codrops</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Inspirational Website Of The Week</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020</span>
                       </motion.div>
                     </div>
                   </li>
@@ -195,7 +217,6 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Heritage In Motion</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Website Of The Year</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          <Link to="/v-and-a-culture-in-crisis" className="inline-block fake-strike">V&amp;A Portal</Link>
                         </span>
                         <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019</span>
                       </motion.div>
