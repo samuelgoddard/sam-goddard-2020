@@ -160,9 +160,9 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Admire The Web</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Featured Website</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          (3 times)
+                          (4 times)
                         </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
                       </motion.div>
                     </div>
                   </li>
