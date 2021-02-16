@@ -121,9 +121,9 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UI Award</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          (2 times)
+                          (3 times)
                         </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
                       </motion.div>
                     </div>
                   </li>
@@ -133,9 +133,9 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UX Award</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          (2 times)
+                          (3 times)
                         </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
                       </motion.div>
                     </div>
                   </li>
