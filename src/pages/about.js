@@ -115,10 +115,54 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                 <span className="block text-base mb-3 uppercase">Features &amp; Awards</span>
 
                 <ul className="border-t border-black border-opacity-75">
+                <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Honors</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">(2 times)
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020 — 21</span>
+                      </motion.div>
+                    </div>
+                  </li>
                   <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
                     <div className="overflow-hidden w-full">
                       <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Mobile Excellence</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">(2 times)
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020 — 21</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Mobile Of The Week</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020 — 21</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Site Of The Day</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2021</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UI Award</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
                           (3 times)
@@ -130,7 +174,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                   <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
                     <div className="overflow-hidden w-full">
                       <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UX Award</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
                           (3 times)
@@ -142,7 +186,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                   <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
                     <div className="overflow-hidden w-full">
                       <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSS Design Awards</span>
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
 
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public Innovation Award</span>
                         
@@ -160,7 +204,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Admire The Web</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Featured Website</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          (4 times)
+                          (5 times)
                         </span>
                         <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
                       </motion.div>
@@ -172,42 +216,9 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Mindsparkle</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Website Feature</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          (2 times)
+                          (3 times)
                         </span>
                         <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 20</span>
-                      </motion.div>
-                    </div>
-                  </li>
-                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
-                    <div className="overflow-hidden w-full">
-                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
-                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Honors</span>
-                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                        </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020</span>
-                      </motion.div>
-                    </div>
-                  </li>
-                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
-                    <div className="overflow-hidden w-full">
-                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
-                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Mobile Excellence</span>
-                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                        </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020</span>
-                      </motion.div>
-                    </div>
-                  </li>
-                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
-                    <div className="overflow-hidden w-full">
-                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
-                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Mobile Of The Week</span>
-                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                        </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020</span>
                       </motion.div>
                     </div>
                   </li>
@@ -238,9 +249,9 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                       <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Codrops</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Inspirational Website Of The Week</span>
-                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">(2 times)
                         </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020</span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2020 — 21</span>
                       </motion.div>
                     </div>
                   </li>
