@@ -71,7 +71,7 @@ const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}
                 <div className="w-full md:w-1/2 mb-12">
                   <div className="pr-12 md:pr-12 lg:pr-24 xl:pr-32 mb-12 md:mb-16 xl:mb-20 w-full md:w-11/12 xl:w-10/12">
                     <span className="block collab-text font-light">
-                      <p>&nbsp;&nbsp;&nbsp;&nbsp;I’m always open to hearing about new projects and oppurtunities, so please feel free to get in touch via any of the channels below.</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;I’m always open to hearing about new projects and opportunities, so please feel free to get in touch via any of the channels below.</p>
                     </span>
                   </div>
 
