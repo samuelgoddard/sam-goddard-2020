@@ -63,6 +63,9 @@ class Layout extends React.Component {
           }
         `}
         render={data => (
+          <>
+          <Header path={ location.pathname } theme={ location.pathname === '/about' || location.pathname === '/about/' ? "text-black" : "text-white" } />
+
           <div id="top" className={ location.pathname === '/about' || location.pathname === '/about/' ? "bg-white text-black transition-colors ease-in-out duration-700 delay-300 min-h-screen" : "bg-black text-white transition-color ease-in-out duration-700 delay-300 min-h-screen"}>
 
             <a className="skip-link sr-only" href="#scroll-container">Skip to main</a>
@@ -155,8 +158,7 @@ class Layout extends React.Component {
                 </motion.div>
               </motion.section>
             )}
-            
-            <Header path={ location.pathname } theme={ location.pathname === '/about' || location.pathname === '/about/' ? "text-black" : "text-white" } />
+          
             
             <div id="scroll-container" data-scroll-container>
               <AnimatePresence exitBeforeEnter>
@@ -164,6 +166,7 @@ class Layout extends React.Component {
               </AnimatePresence>
             </div>
           </div>
+          </>
         )}
       />
     )

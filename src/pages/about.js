@@ -21,7 +21,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
         data-scroll-section
         animate="enter"
         exit="exit"
-        className="text-black"
+        className="text-black dark-select"
       >
         <div>
           <div className="flex flex-wrap" id="pinned-pane">
@@ -35,19 +35,19 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                 >
                   <span className="hidden md:block">
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a creative developer from</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a creative developer &amp;</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">Nottingham with a focus on</motion.span>
+                    <motion.span variants={revealInOut} className="block w-full">co-founder of <a href="https://shiftwalk.studio" target="_blank" rel="noopener noreferrer" className="relative group"><span className="line opacity-0 group-hover:opacity-100 group-focus:opacity-100"></span>Shiftwalk Studio</a>.</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">methodical html, css &amp; javascript.</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">With a focus on methodical</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">I enjoy making websites that</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">code, I enjoy making websites</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">are innovative, user-focused,</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">that are innovative, user-focussed,</motion.span>
                     </span>
                     <span className="block overflow-hidden">
                       <motion.span variants={revealInOut} className="block w-full">accessible &amp; performant.</motion.span>
@@ -59,16 +59,16 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                       <motion.span variants={revealInOut} className="block w-full">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a creative</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">developer from</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">developer &amp; co-</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">Nottingham with a</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">-founder of Shiftwalk</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">focus on methodical</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">Studio. With a focus</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">html, css &amp; javascript.</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">on methodical code</motion.span>
                     </span>
                     <span className="block overflow-hidden">
                       <motion.span variants={revealInOut} className="block w-full">I enjoy making</motion.span>
@@ -80,7 +80,7 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                       <motion.span variants={revealInOut} className="block w-full">innovative, user-</motion.span>
                     </span>
                     <span className="block overflow-hidden">
-                      <motion.span variants={revealInOut} className="block w-full">focused, accessible</motion.span>
+                      <motion.span variants={revealInOut} className="block w-full">focussed, accessible</motion.span>
                     </span>
                     <span className="block overflow-hidden">
                       <motion.span variants={revealInOut} className="block w-full">&amp; performant.</motion.span>
@@ -118,6 +118,67 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                   <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
                     <div className="overflow-hidden w-full">
                       <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Developer Of The Year (Special Kudos)</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2021</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Site Of The Day</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">(3 Times)
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2021</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UI Award</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                          (4 times)
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UX Award</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                          (4 times)
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
+
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public Innovation Award</span>
+                        
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                          (4 times)
+                        </span>
+
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Site Of The Day</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
@@ -130,8 +191,19 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                     <div className="overflow-hidden w-full">
                       <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
-                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Developer Award</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Ecommerce Of The Year (Nominee)</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
+                        </span>
+                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2021</span>
+                      </motion.div>
+                    </div>
+                  </li>
+                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
+                    <div className="overflow-hidden w-full">
+                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
+                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Awwwards</span>
+                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Developer Award</span>
+                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">(2 times)
                         </span>
                         <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2021</span>
                       </motion.div>
@@ -173,60 +245,10 @@ const AboutPage = ({ data: { datoCmsAbout }, location, childAnimationDelay}) => 
                   <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
                     <div className="overflow-hidden w-full">
                       <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
-                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Site Of The Day</span>
-                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                        </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2021</span>
-                      </motion.div>
-                    </div>
-                  </li>
-                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
-                    <div className="overflow-hidden w-full">
-                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
-                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UI Award</span>
-                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          (3 times)
-                        </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
-                      </motion.div>
-                    </div>
-                  </li>
-                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
-                    <div className="overflow-hidden w-full">
-                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
-                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public UX Award</span>
-                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          (3 times)
-                        </span>
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
-                      </motion.div>
-                    </div>
-                  </li>
-                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
-                    <div className="overflow-hidden w-full">
-                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
-                        <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">CSSDA</span>
-
-                        <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Public Innovation Award</span>
-                        
-                        <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          (3 times)
-                        </span>
-
-                        <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
-                      </motion.div>
-                    </div>
-                  </li>
-                  <li className="block border-b border-black border-opacity-75 w-full pt-4 pb-3">
-                    <div className="overflow-hidden w-full">
-                      <motion.div variants={revealInOut} className="flex flex-wrap w-full items-center">
                         <span className="block font-display font-light leading-none tracking-mini header-item header-item--title w-full md:w-1/4 mb-1 md:mb-0">Admire The Web</span>
                         <span className="block text-left md:ml-auto header-item header-item--small w-1/2 md:w-4/12">Featured Website</span>
                         <span className="block text-right md:text-left ml-auto header-item header-item--small w-1/2 md:w-2/12">
-                          (5 times)
+                          (6 times)
                         </span>
                         <span className="hidden md:block text-right ml-auto header-item header-item--small w-1/2 md:w-1/4">2019 — 21</span>
                       </motion.div>

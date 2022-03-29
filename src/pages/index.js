@@ -76,8 +76,13 @@ const IndexPage = ({ data: { datoCmsHome, work }, location, childAnimationDelay}
                   </div>
 
                   <div className="mb-3 md:mb-5 xl:mb-8">
+                    <span className="block block text-base mb-0 uppercase opacity-100">Studio</span>
+                    <a href="https://shiftwalk.studio" className="inline-block fake-strike text-2xl md:text-3xl xl:text-4xl">shiftwalk.studio</a>
+                  </div>
+
+                  <div className="mb-3 md:mb-5 xl:mb-8">
                     <span className="block block text-base mb-0 uppercase opacity-100">Email</span>
-                    <a href="mailto:hello@samgoddard.co.uk" className="inline-block fake-strike text-2xl md:text-3xl xl:text-4xl">hello@samgoddard.co.uk</a>
+                    <a href="mailto:hello@samgoddard.co.uk" className="inline-block fake-strike text-2xl md:text-3xl xl:text-4xl">hello@shiftwalk.studio</a>
                   </div>
 
                   <div className="mb-3 md:mb-5 xl:mb-8">

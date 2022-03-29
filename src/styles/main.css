@@ -138,3 +138,9 @@ html.has-scroll-dragging {
         height: 4.6vw;
     }
 }
+
+.line {
+    @apply absolute top-0 left-0 right-0 w-full bg-current;
+    margin-top: 9.5%;
+    height: 0.45vw;
+}
