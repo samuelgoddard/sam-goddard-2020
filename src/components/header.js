@@ -18,59 +18,59 @@ const Header = ({ theme, path }) => {
             <Marquee velocity={0.04}>
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
               Creative Developer
               &nbsp;<em>—</em>&nbsp;
-              Available May ’22
+              Available June ’23
               &nbsp;<em>—</em>&nbsp;
             </Marquee>
           </div>
